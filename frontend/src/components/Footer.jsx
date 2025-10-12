@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import { Phone, Mail } from 'lucide-react';
+import { Phone, Mail, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   useEffect(() => {
