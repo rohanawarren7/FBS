@@ -1,0 +1,122 @@
+.footer {
+  background: var(--bg-card);
+  padding: 60px 40px 40px;
+  border-top: 1px solid var(--border-medium);
+}
+
+.footer-container {
+  max-width: 87.5rem;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-brand {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  max-width: 280px;
+  height: auto;
+}
+
+.footer-contact {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  color: var(--brand-primary);
+  transform: translateX(4px);
+}
+
+.contact-item svg {
+  color: var(--brand-primary);
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  border-top: 1px solid var(--border-medium);
+  text-align: center;
+}
+
+.footer-company {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.footer-copyright {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 40px 20px 30px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  
+  .footer-brand,
+  .footer-contact {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    max-width: 220px;
+  }
+  
+  .contact-items {
+    align-items: center;
+  }
+  
+  .contact-item:hover {
+    transform: translateX(0) scale(1.02);
+  }
+}
