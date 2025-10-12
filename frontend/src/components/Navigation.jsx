@@ -28,7 +28,7 @@ const Navigation = () => {
       <div className="nav-container">
         <Link to="/" className="nav-logo">
           <img 
-            src="https://customer-assets.emergentagent.com/job_fbs-renovations/artifacts/aykcyww6_IMG_0547.jpeg" 
+            src="https://customer-assets.emergentagent.com/job_fbs-renovations/artifacts/7outxkf3_Black%20and%20White%20Geometric%20Building%20Construction%20Company%20Logo%20%282%29.png" 
             alt="Fallow Building Services" 
             className="nav-logo-img"
           />
