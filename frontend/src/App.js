@@ -16,6 +16,10 @@ import Outbuildings from './components/services/Outbuildings';
 import PropertyManagement from './components/services/PropertyManagement';
 import GuaranteedRent from './components/services/GuaranteedRent';
 
+// Legal Pages
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsConditions from './components/TermsConditions';
+
 function App() {
   return (
     <div className="App">
@@ -32,6 +36,8 @@ function App() {
           <Route path="/services/outbuildings" element={<Outbuildings />} />
           <Route path="/services/property-management" element={<PropertyManagement />} />
           <Route path="/services/guaranteed-rent" element={<GuaranteedRent />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-conditions" element={<TermsConditions />} />
         </Routes>
         <Footer />
       </BrowserRouter>
