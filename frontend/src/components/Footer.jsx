@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-brand">
             <img 
-              src="https://customer-assets.emergentagent.com/job_fbs-renovations/artifacts/oh4sxiu9_Large%20Logo.png" 
+              src="https://customer-assets.emergentagent.com/job_fbs-renovations/artifacts/c6g7jh1c_Large%20Logo%201.png" 
               alt="Fallow Building Services" 
               className="footer-logo"
             />
