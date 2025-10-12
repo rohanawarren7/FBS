@@ -39,7 +39,7 @@ const HeroSection = () => {
           <Button onClick={handleGetQuote} className="btn-primary">
             GET A FREE QUOTE
           </Button>
-          <a href="https://wa.me/+447459627464" className="btn-secondary">
+          <a href="https://wa.me/+447459627464" className="btn-secondary" target="_blank" rel="noopener noreferrer">
             WHATSAPP US
           </a>
         </div>
