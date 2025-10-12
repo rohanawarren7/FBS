@@ -117,6 +117,31 @@
   margin-bottom: 8px;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.footer-link {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--brand-primary);
+}
+
+.footer-separator {
+  color: var(--text-secondary);
+}
+
 .footer-copyright {
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 500;
