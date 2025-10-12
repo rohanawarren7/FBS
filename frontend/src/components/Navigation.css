@@ -19,6 +19,7 @@
 .nav-logo-img {
   height: 50px;
   width: auto;
+  border-radius: 4px;
 }
 
 .mobile-toggle {
