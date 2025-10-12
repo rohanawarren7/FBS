@@ -22,7 +22,7 @@ const Footer = () => {
     };
   }, []);
 
-  const serviceAreas = ['Waltham Forest', 'Redbridge', 'Enfield', 'Newham', 'Barking & Dagenham'];
+  const serviceAreas = ['Waltham Forest', 'Redbridge', 'Enfield', 'Newham', 'Barking & Dagenham', 'Romford', 'Hornchurch', 'Havering', 'Essex', 'East London'];
 
   return (
     <footer className="footer">
