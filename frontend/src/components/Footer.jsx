@@ -82,6 +82,9 @@ const Footer = () => {
           <p className="footer-company">
             Fallow Business Group Ltd trading as Fallow Building Services
           </p>
+          <p className="footer-registration">
+            Company Registration Number: 16532814
+          </p>
           <p className="footer-copyright">
             © {new Date().getFullYear()} Fallow Building Services. All rights reserved.
           </p>
