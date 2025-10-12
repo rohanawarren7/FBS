@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-logo">
           <img 
-            src="https://customer-assets.emergentagent.com/job_d7a7b886-39b7-4daa-a499-83a75610cbfc/artifacts/w8ezth0f_Fallow%20Building%20Services-logos__transparent.png" 
+            src="https://customer-assets.emergentagent.com/job_fbs-renovations/artifacts/aykcyww6_IMG_0547.jpeg" 
             alt="Fallow Building Services" 
             className="logo-image"
           />
