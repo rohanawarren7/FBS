@@ -1,0 +1,380 @@
+.service-page {
+  background: var(--bg-page);
+}
+
+/* Hero Section */
+.service-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.service-hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.service-hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.service-hero-overlay {
+  opacity: 0.75;
+  background-image: linear-gradient(135deg, #000, rgba(0, 0, 0, 0.6));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.service-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 87.5rem;
+  margin: 0 auto;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.service-hero-title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.service-hero-subtitle {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: var(--neutral-light);
+  margin-bottom: 40px;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-hero-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Container */
+.service-container {
+  max-width: 87.5rem;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Benefits Section */
+.service-benefits {
+  padding: 96px 0;
+  background: var(--bg-page);
+}
+
+.section-title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.1;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: -0.02em;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.benefit-card {
+  background: var(--bg-card);
+  padding: 40px;
+  border: 1px solid var(--border-medium);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: var(--secondary-olive);
+  transform: translateY(-4px);
+  border-color: var(--brand-primary);
+}
+
+.benefit-icon {
+  color: var(--brand-primary);
+  margin-bottom: 20px;
+}
+
+.benefit-title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.benefit-description {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Process Section */
+.service-process {
+  padding: 96px 0;
+  background: var(--bg-card);
+}
+
+.process-timeline {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.process-step {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.process-step:last-child {
+  margin-bottom: 0;
+}
+
+.process-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 31px;
+  top: 64px;
+  width: 2px;
+  height: calc(100% + 24px);
+  background: var(--border-medium);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  color: var(--text-inverse);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.step-content {
+  flex: 1;
+  padding-top: 8px;
+}
+
+.step-title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.step-description {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Reviews Section */
+.service-reviews {
+  padding: 96px 0;
+  background: var(--bg-page);
+}
+
+.reviews-widget {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.bark-widget {
+  display: inline-block;
+}
+
+/* Service Areas Section */
+.service-areas-section {
+  padding: 96px 0;
+  background: var(--bg-card);
+  text-align: center;
+}
+
+.service-areas-text {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+/* CTA Section */
+.service-cta-section {
+  padding: 96px 0;
+  background: var(--secondary-olive);
+  text-align: center;
+}
+
+.cta-title {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.cta-description {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--neutral-light);
+  margin-bottom: 40px;
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.btn-primary-large {
+  background: var(--brand-primary);
+  color: var(--text-inverse);
+  border: none;
+  border-radius: 10rem;
+  padding: 1.2em 2.5em;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 64px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1em;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.btn-primary-large:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(217, 251, 6, 0.3);
+}
+
+.cta-contact {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--brand-hover);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .service-hero-content {
+    padding: 60px 20px;
+  }
+
+  .service-hero-cta {
+    flex-direction: column;
+  }
+
+  .service-container {
+    padding: 0 20px;
+  }
+
+  .service-benefits,
+  .service-process,
+  .service-reviews,
+  .service-areas-section,
+  .service-cta-section {
+    padding: 60px 0;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    gap: 16px;
+  }
+
+  .process-step:not(:last-child)::after {
+    left: 23px;
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
+  .cta-contact {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
