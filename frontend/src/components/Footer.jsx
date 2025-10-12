@@ -85,6 +85,11 @@ const Footer = () => {
           <p className="footer-registration">
             Company Registration Number: 16532814
           </p>
+          <div className="footer-links">
+            <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+            <span className="footer-separator">|</span>
+            <Link to="/terms-conditions" className="footer-link">Terms & Conditions</Link>
+          </div>
           <p className="footer-copyright">
             © {new Date().getFullYear()} Fallow Building Services. All rights reserved.
           </p>
