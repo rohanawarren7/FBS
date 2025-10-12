@@ -44,6 +44,10 @@ const Footer = () => {
                 <Phone size={20} />
                 <span>07459 627464</span>
               </a>
+              <a href="https://wa.me/+447459627464" target="_blank" rel="noopener noreferrer" className="contact-item">
+                <MessageCircle size={20} />
+                <span>WhatsApp Us</span>
+              </a>
               <a href="mailto:rwarreninfo@gmail.com" className="contact-item">
                 <Mail size={20} />
                 <span>rwarreninfo@gmail.com</span>
