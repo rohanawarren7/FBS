@@ -20,6 +20,18 @@ import GuaranteedRent from './components/services/GuaranteedRent';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
 
+// New SEO Pages — clean URLs
+import ExtensionsPage from './components/pages/ExtensionsPage';
+import LoftConversionsPage from './components/pages/LoftConversionsPage';
+import BathroomRefurbishmentsPage from './components/pages/BathroomRefurbishmentsPage';
+import ExternalWallInsulationPage from './components/pages/ExternalWallInsulationPage';
+import RoofingPage from './components/pages/RoofingPage';
+import MaintenancePage from './components/pages/MaintenancePage';
+import HaveringPage from './components/pages/HaveringPage';
+import RomfordPage from './components/pages/RomfordPage';
+import AboutPage from './components/pages/AboutPage';
+import ContactPage from './components/pages/ContactPage';
+
 function App() {
   return (
     <div className="App">
@@ -36,11 +48,26 @@ function App() {
           <Route path="/services/outbuildings" element={<Outbuildings />} />
           <Route path="/services/property-management" element={<PropertyManagement />} />
           <Route path="/services/guaranteed-rent" element={<GuaranteedRent />} />
+          {/* New clean-URL SEO pages */}
+          <Route path="/extensions" element={<ExtensionsPage />} />
+          <Route path="/loft-conversions" element={<LoftConversionsPage />} />
+          <Route path="/bathroom-refurbishments" element={<BathroomRefurbishmentsPage />} />
+          <Route path="/external-wall-insulation" element={<ExternalWallInsulationPage />} />
+          <Route path="/roofing" element={<RoofingPage />} />
+          <Route path="/maintenance" element={<MaintenancePage />} />
+          <Route path="/havering" element={<HaveringPage />} />
+          <Route path="/romford" element={<RomfordPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
           {/* Redirect broken /portfolio/ URLs that were previously indexed */}
           <Route path="/portfolio" element={<Navigate to="/" replace />} />
           <Route path="/portfolio/*" element={<Navigate to="/" replace />} />
+          {/* Redirect old /services/ prefix routes to clean URLs */}
+          <Route path="/services/extensions" element={<Navigate to="/extensions" replace />} />
+          <Route path="/services/loft-conversions" element={<Navigate to="/loft-conversions" replace />} />
+          <Route path="/services/bathroom-refurbishments" element={<Navigate to="/bathroom-refurbishments" replace />} />
         </Routes>
         <Footer />
       </BrowserRouter>
