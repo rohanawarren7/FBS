@@ -1,5 +1,5 @@
 .services-section {
-  background: var(--bg-page);
+  background: var(--bg-light);
   padding: 96px 40px;
 }
 
@@ -59,12 +59,14 @@
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  box-shadow: 0 2px 8px rgba(10, 22, 40, 0.06);
 }
 
 .service-card:hover {
-  background: var(--secondary-olive);
+  background: var(--bg-dark);
   transform: translateY(-4px);
   border-color: var(--brand-primary);
+  box-shadow: 0 8px 24px rgba(10, 22, 40, 0.2);
 }
 
 .service-icon {
@@ -85,6 +87,11 @@
   color: var(--text-primary);
   margin-bottom: 12px;
   text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .service-title {
+  color: var(--text-gold);
 }
 
 .service-description {
@@ -93,6 +100,11 @@
   font-size: 1rem;
   line-height: 1.5;
   color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .service-description {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .service-areas {
@@ -118,51 +130,52 @@
 }
 
 .area-badge {
-  background: var(--secondary-olive);
-  color: var(--text-primary);
+  background: var(--bg-dark);
+  color: var(--text-gold);
   padding: 12px 24px;
   border-radius: 10rem;
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
   text-transform: uppercase;
-  border: 1px solid var(--border-medium);
+  border: 1px solid rgba(201, 168, 76, 0.3);
   transition: all 0.3s ease;
 }
 
 .area-badge:hover {
   background: var(--brand-primary);
-  color: var(--text-inverse);
+  color: var(--bg-dark);
   transform: scale(1.05);
+  border-color: var(--brand-primary);
 }
 
 @media (max-width: 767px) {
   .services-section {
     padding: 60px 20px;
   }
-  
+
   .service-category {
     margin-bottom: 80px;
   }
-  
+
   .category-header {
     margin-bottom: 40px;
   }
-  
+
   .services-grid {
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  
+
   .service-card {
     padding: 32px 24px;
   }
-  
+
   .areas-list {
     flex-direction: column;
     align-items: stretch;
   }
-  
+
   .area-badge {
     text-align: center;
   }
