@@ -5,7 +5,7 @@ const BathroomRefurbishments = () => {
   const pageData = {
     title: 'Bathroom Refurbishments',
     metaDescription: 'Expert bathroom renovation and refurbishment in London. Modern bathroom installations, luxury finishes. Free quotes from Fallow Building Services.',
-    heroImage: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxiYXRocm9vbSUyMHJlbm92YXRpb258ZW58MHx8fHwxNzYwMjgxNDQ4fDA&ixlib=rb-4.1.0&q=85',
+    heroImage: '/images/hero-bathroom.jpg',
     description: 'Create your dream bathroom with our professional refurbishment services. From contemporary to traditional styles, we deliver exceptional results.',
     keywords: 'bathroom refurbishment London, bathroom renovation, bathroom installation, luxury bathroom, bathroom fitters London, Barking & Dagenham',
     benefits: [

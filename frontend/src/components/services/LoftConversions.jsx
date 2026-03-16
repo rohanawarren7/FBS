@@ -5,7 +5,7 @@ const LoftConversions = () => {
   const pageData = {
     title: 'Loft Conversions',
     metaDescription: 'Expert loft conversion services in London. Transform your unused attic space into a beautiful, functional room. Free consultation from Fallow Building Services.',
-    heroImage: 'https://images.unsplash.com/photo-1610565816661-9aa6f77b3e71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxsb2Z0JTIwY29udmVyc2lvbnxlbnwwfHx8fDE3NjAyODE0NTV8MA&ixlib=rb-4.1.0&q=85',
+    heroImage: '/images/hero-loft-conversions.jpg',
     description: 'Maximize your home\'s potential by converting unused loft space into a stunning bedroom, office, or living area with expert craftsmanship.',
     keywords: 'loft conversion London, attic conversion, loft bedroom, loft extension, loft builders London, Waltham Forest, Enfield',
     benefits: [

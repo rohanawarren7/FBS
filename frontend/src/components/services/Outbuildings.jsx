@@ -7,7 +7,7 @@ const Outbuildings = () => {
     pageTitle: 'Garden Rooms & Outbuildings Havering | Essex',
     metaDescription: 'Custom garden offices, studios & outbuildings in Havering. CIS-registered builder. Call 0203 576 5962.',
     canonicalUrl: 'https://fallowbuildingservices.co.uk/outbuildings',
-    heroImage: 'https://images.unsplash.com/photo-1685633225252-40efb423c15f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBvZmZpY2V8ZW58MHx8fHwxNzYwMjgxNDY2fDA&ixlib=rb-4.1.0&q=85',
+    heroImage: '/images/hero-outbuildings.jpg',
     description: 'Expand your property with custom-built outbuildings. Perfect for garden offices, studios, gyms, or storage - built to the highest standards.',
     keywords: 'outbuildings London, garden office, garden room, garden studio, shed construction, outdoor building London',
     benefits: [

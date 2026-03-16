@@ -5,7 +5,8 @@ const Extensions = () => {
   const pageData = {
     title: 'Home Extensions',
     metaDescription: 'Expert home extension services in London. Expand your living space with professionally built extensions. Free quotes available from Fallow Building Services.',
-    heroImage: 'https://images.unsplash.com/photo-1719381502987-058c2140df08?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxob21lJTIwZXh0ZW5zaW9ufGVufDB8fHx8MTc2MDI4MTQzMnww&ixlib=rb-4.1.0&q=85',
+    heroImage: '/images/hero-extensions.jpg',
+    heroAlt: 'Home extension in Romford, Essex by Fallow Building Services',
     description: 'Transform your home with a professionally designed and built extension that adds valuable space and increases your property value.',
     keywords: 'home extensions London, house extensions, building extensions, rear extensions, side extensions, Waltham Forest, Redbridge, Enfield',
     benefits: [
