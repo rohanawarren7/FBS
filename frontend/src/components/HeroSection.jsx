@@ -11,8 +11,8 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="hero-background">
         <img 
-          src="https://images.unsplash.com/photo-1599707254554-027aeb4deacd" 
-          alt="Construction site" 
+          src="/images/hero-construction.jpg"
+          alt="Building contractor working in Havering, Essex"
           className="hero-image"
         />
         <div className="hero-overlay"></div>
@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-logo">
           <img 
-            src="https://customer-assets.emergentagent.com/job_fbs-renovations/artifacts/c6g7jh1c_Large%20Logo%201.png" 
+            src="/images/logo-large.png"
             alt="Fallow Building Services" 
             className="logo-image"
           />

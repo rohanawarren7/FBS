@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-brand">
             <img 
-              src="https://customer-assets.emergentagent.com/job_fbs-renovations/artifacts/c6g7jh1c_Large%20Logo%201.png" 
+              src="/images/logo-large.png" 
               alt="Fallow Building Services" 
               className="footer-logo"
             />
