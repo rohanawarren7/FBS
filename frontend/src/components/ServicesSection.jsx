@@ -5,60 +5,84 @@ import { Home, Wrench, Building2, PaintBucket, Warehouse, Key } from 'lucide-rea
 
 const ServicesSection = () => {
   const buildingServices = [
-    { 
-      icon: <Building2 size={40} />, 
-      title: 'Extensions', 
-      description: 'Expand your living space with expertly crafted extensions',
-      path: '/services/extensions'
+    {
+      icon: <Building2 size={40} />,
+      title: 'Extensions',
+      description: 'Single & double-storey extensions across Havering & Romford',
+      path: '/extensions'
     },
-    { 
-      icon: <Home size={40} />, 
-      title: 'Home Renovations', 
-      description: 'Complete home transformations to modernize your property',
+    {
+      icon: <Home size={40} />,
+      title: 'Loft Conversions',
+      description: 'Dormer, hip-to-gable, Velux & mansard conversions',
+      path: '/loft-conversions'
+    },
+    {
+      icon: <Home size={40} />,
+      title: 'Home Renovations',
+      description: 'Full refurbishments and property upgrades across Essex',
       path: '/services/home-renovations'
     },
-    { 
-      icon: <Warehouse size={40} />, 
-      title: 'Porches', 
-      description: 'Beautiful porch installations to enhance your entrance',
-      path: '/services/porches'
-    },
-    { 
-      icon: <Home size={40} />, 
-      title: 'Loft Conversions', 
-      description: 'Transform unused attic space into functional rooms',
-      path: '/services/loft-conversions'
-    },
-    { 
-      icon: <PaintBucket size={40} />, 
-      title: 'Kitchen & Bathroom Refurbishments', 
-      description: 'Modern upgrades for kitchens and bathrooms',
+    {
+      icon: <PaintBucket size={40} />,
+      title: 'Kitchen Refurbishments',
+      description: 'Kitchen installations across Havering & Romford',
       path: '/services/kitchen-refurbishments'
     },
-    { 
-      icon: <Warehouse size={40} />, 
-      title: 'Outbuildings', 
-      description: 'Custom garden offices, studios, and storage solutions',
+    {
+      icon: <PaintBucket size={40} />,
+      title: 'Bathroom Refurbishments',
+      description: 'Full refits, en-suites & wet rooms across Havering',
+      path: '/bathroom-refurbishments'
+    },
+    {
+      icon: <Wrench size={40} />,
+      title: 'External Wall Insulation',
+      description: 'EWI for solid-wall properties. ECO4 support available.',
+      path: '/external-wall-insulation'
+    },
+    {
+      icon: <Warehouse size={40} />,
+      title: 'Roofing',
+      description: 'Pitched & flat roofs, repairs, emergency call-out',
+      path: '/roofing'
+    },
+    {
+      icon: <Warehouse size={40} />,
+      title: 'Porches',
+      description: 'Open, closed & storm porch installations in Havering',
+      path: '/services/porches'
+    },
+    {
+      icon: <Warehouse size={40} />,
+      title: 'Outbuildings',
+      description: 'Custom garden offices, studios & storage solutions',
       path: '/services/outbuildings'
     }
   ];
 
   const propertyServices = [
-    { 
-      icon: <Key size={40} />, 
-      title: 'Property Management', 
-      description: 'Comprehensive property management services for landlords',
+    {
+      icon: <Wrench size={40} />,
+      title: 'Property Maintenance',
+      description: 'Planned & reactive maintenance for property managers, care homes & housing associations',
+      path: '/maintenance'
+    },
+    {
+      icon: <Key size={40} />,
+      title: 'Property Management',
+      description: 'Full property management for Havering & East London landlords',
       path: '/services/property-management'
     },
-    { 
-      icon: <Wrench size={40} />, 
-      title: 'Guaranteed Rent', 
-      description: 'Hassle-free guaranteed rent schemes for peace of mind',
+    {
+      icon: <Key size={40} />,
+      title: 'Guaranteed Rent',
+      description: 'Hassle-free guaranteed rent scheme for Essex landlords',
       path: '/services/guaranteed-rent'
     }
   ];
 
-  const serviceAreas = ['Waltham Forest', 'Redbridge', 'Enfield', 'Newham', 'Barking & Dagenham'];
+  const serviceAreas = ['Romford', 'Hornchurch', 'Rainham', 'Upminster', 'Havering', 'Barking & Dagenham', 'Redbridge'];
 
   return (
     <section className="services-section">
