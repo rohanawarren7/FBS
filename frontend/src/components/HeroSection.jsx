@@ -28,7 +28,7 @@ const HeroSection = () => {
         </div>
         
         <h1 className="hero-title">
-          BUILDING EXCELLENCE ACROSS LONDON
+          BUILDING EXCELLENCE ACROSS HAVERING & ESSEX
         </h1>
         
         <p className="hero-description">
