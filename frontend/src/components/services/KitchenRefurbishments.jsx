@@ -4,7 +4,10 @@ import ServicePage from '../ServicePage';
 const KitchenRefurbishments = () => {
   const pageData = {
     title: 'Kitchen Refurbishments',
-    metaDescription: 'Professional kitchen renovation and refurbishment services in London. Modern kitchen installations by Fallow Building Services. Get your free quote today.',
+    h1: 'Kitchen Refurbishments in Havering & Romford',
+    pageTitle: 'Kitchen Refurbishments Havering | Kitchen Fitters Romford',
+    metaDescription: 'Kitchen installations & refurbishments across Havering. Supply & fit or fit-only. CIS-registered. Call 0203 576 5962 for free quote.',
+    canonicalUrl: 'https://fallowbuildingservices.co.uk/kitchen-refurbishments',
     heroImage: 'https://images.unsplash.com/photo-1601760561441-16420502c7e0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxraXRjaGVuJTIwcmVub3ZhdGlvbnxlbnwwfHx8fDE3NjAyODE0NDN8MA&ixlib=rb-4.1.0&q=85',
     description: 'Transform your kitchen into a modern, functional space with our expert refurbishment services. From design to installation, we handle everything.',
     keywords: 'kitchen refurbishment London, kitchen renovation, modern kitchen, kitchen installation, kitchen fitters London, Redbridge, Newham',

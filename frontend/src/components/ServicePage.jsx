@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, CheckCircle2 } from 'lucide-react';
 import './ServicePage.css';
 
-const ServicePage = ({ 
-  title, 
-  metaDescription, 
-  heroImage, 
-  description, 
-  benefits, 
-  process, 
-  keywords 
+const ServicePage = ({
+  title,
+  pageTitle,
+  metaDescription,
+  heroImage,
+  description,
+  benefits,
+  process,
+  keywords,
+  h1,
+  canonicalUrl
 }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,13 +39,13 @@ const ServicePage = ({
   return (
     <>
       <Helmet>
-        <title>{title} | Fallow Building Services London</title>
+        <title>{pageTitle || `${title} | Fallow Building Services`}</title>
         <meta name="description" content={metaDescription} />
-        <meta name="keywords" content={keywords} />
-        <meta property="og:title" content={`${title} | Fallow Building Services`} />
+        {keywords && <meta name="keywords" content={keywords} />}
+        <meta property="og:title" content={pageTitle || `${title} | Fallow Building Services`} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href={`https://fallowbuildingservices.com/services/${title.toLowerCase().replace(/\s+/g, '-')}`} />
+        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
       </Helmet>
 
       <div className="service-page">
@@ -53,7 +56,7 @@ const ServicePage = ({
             <div className="service-hero-overlay"></div>
           </div>
           <div className="service-hero-content">
-            <h1 className="service-hero-title">{title}</h1>
+            <h1 className="service-hero-title">{h1 || title}</h1>
             <p className="service-hero-subtitle">{description}</p>
             <div className="service-hero-cta">
               <button onClick={handleGetQuote} className="btn-primary">

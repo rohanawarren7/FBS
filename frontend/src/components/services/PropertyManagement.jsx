@@ -4,7 +4,10 @@ import ServicePage from '../ServicePage';
 const PropertyManagement = () => {
   const pageData = {
     title: 'Property Management',
-    metaDescription: 'Professional property management services for landlords across London. Comprehensive management in Waltham Forest, Redbridge, Enfield, Newham, and Barking & Dagenham.',
+    h1: 'Property Management in Havering & East London',
+    pageTitle: 'Property Management Havering | Landlord Services Essex',
+    metaDescription: 'Comprehensive property management in Havering & East London. Tenant finding, maintenance, full management. Call 0203 576 5962.',
+    canonicalUrl: 'https://fallowbuildingservices.co.uk/property-management',
     heroImage: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxwcm9wZXJ0eSUyMG1hbmFnZW1lbnR8ZW58MHx8fHwxNzYwMjgxNDcxfDA&ixlib=rb-4.1.0&q=85',
     description: 'Comprehensive property management services for landlords. We handle everything from tenant finding to maintenance, giving you peace of mind.',
     keywords: 'property management London, landlord services, letting agent, property maintenance, Waltham Forest, Redbridge, Enfield, Newham, Barking Dagenham',

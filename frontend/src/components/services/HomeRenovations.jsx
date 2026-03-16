@@ -4,7 +4,10 @@ import ServicePage from '../ServicePage';
 const HomeRenovations = () => {
   const pageData = {
     title: 'Home Renovations',
-    metaDescription: 'Complete home renovation services across London. Transform your property with expert refurbishment from Fallow Building Services. Get your free quote today.',
+    h1: 'Home Renovations in Havering & Essex',
+    pageTitle: 'Home Renovations Havering | Full Refurbishment Essex',
+    metaDescription: 'Complete home renovations in Havering & Essex. Full refurbishments, modernisation, property upgrades. CIS-registered. Call 0203 576 5962.',
+    canonicalUrl: 'https://fallowbuildingservices.co.uk/home-renovations',
     heroImage: 'https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxob21lJTIwcmVub3ZhdGlvbnxlbnwwfHx8fDE3NjAyODE0Mzh8MA&ixlib=rb-4.1.0&q=85',
     description: 'Breathe new life into your property with our comprehensive home renovation services. From minor updates to complete refurbishments, we handle it all.',
     keywords: 'home renovations London, house refurbishment, property renovation, home improvement, complete renovation, London builders',
