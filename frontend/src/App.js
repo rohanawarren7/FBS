@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -38,6 +38,9 @@ function App() {
           <Route path="/services/guaranteed-rent" element={<GuaranteedRent />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
+          {/* Redirect broken /portfolio/ URLs that were previously indexed */}
+          <Route path="/portfolio" element={<Navigate to="/" replace />} />
+          <Route path="/portfolio/*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
       </BrowserRouter>

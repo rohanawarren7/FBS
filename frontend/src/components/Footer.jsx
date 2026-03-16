@@ -48,9 +48,9 @@ const Footer = () => {
                 <MessageCircle size={20} />
                 <span>WhatsApp Us</span>
               </a>
-              <a href="mailto:rwarreninfo@gmail.com" className="contact-item">
+              <a href="mailto:info@fallowbuildingservices.co.uk" className="contact-item">
                 <Mail size={20} />
-                <span>rwarreninfo@gmail.com</span>
+                <span>info@fallowbuildingservices.co.uk</span>
               </a>
             </div>
           </div>

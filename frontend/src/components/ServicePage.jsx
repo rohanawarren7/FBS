@@ -30,7 +30,7 @@ const ServicePage = ({
   }, []);
 
   const handleGetQuote = () => {
-    window.location.href = `mailto:rwarreninfo@gmail.com?subject=Free Quote Request - ${title}`;
+    window.location.href = '/contact#enquiry-form';
   };
 
   return (
@@ -153,8 +153,8 @@ const ServicePage = ({
                 <a href="tel:07459627464" className="contact-link">
                   <Phone size={20} /> 07459 627464
                 </a>
-                <a href="mailto:rwarreninfo@gmail.com" className="contact-link">
-                  <Mail size={20} /> rwarreninfo@gmail.com
+                <a href="mailto:info@fallowbuildingservices.co.uk" className="contact-link">
+                  <Mail size={20} /> info@fallowbuildingservices.co.uk
                 </a>
               </div>
             </div>

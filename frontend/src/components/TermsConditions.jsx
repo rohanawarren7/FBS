@@ -32,7 +32,7 @@ const TermsConditions = () => {
               <li>Company Name: Fallow Business Group Ltd</li>
               <li>Trading As: Fallow Building Services</li>
               <li>Company Registration Number: 16532814</li>
-              <li>Email: rwarreninfo@gmail.com</li>
+              <li>Email: info@fallowbuildingservices.co.uk</li>
               <li>Phone: 07459 627464</li>
             </ul>
 
@@ -352,7 +352,7 @@ const TermsConditions = () => {
             
             <h3>16.1 Complaints Procedure</h3>
             <p>
-              If you have a complaint, please contact us immediately at rwarreninfo@gmail.com or 07459 627464. 
+              If you have a complaint, please contact us immediately at info@fallowbuildingservices.co.uk or 07459 627464. 
               We will acknowledge your complaint within 5 working days and aim to resolve it within 28 days.
             </p>
 
@@ -426,7 +426,7 @@ const TermsConditions = () => {
             <h2>23. Contact Information</h2>
             <p>For questions about these Terms and Conditions, please contact us:</p>
             <ul>
-              <li><strong>Email:</strong> rwarreninfo@gmail.com</li>
+              <li><strong>Email:</strong> info@fallowbuildingservices.co.uk</li>
               <li><strong>Phone:</strong> 07459 627464</li>
               <li><strong>Company:</strong> Fallow Business Group Ltd trading as Fallow Building Services</li>
               <li><strong>Company Registration Number:</strong> 16532814</li>

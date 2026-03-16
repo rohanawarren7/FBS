@@ -31,7 +31,7 @@ const PrivacyPolicy = () => {
               <li>Company Name: Fallow Business Group Ltd</li>
               <li>Trading As: Fallow Building Services</li>
               <li>Company Registration Number: 16532814</li>
-              <li>Email: rwarreninfo@gmail.com</li>
+              <li>Email: info@fallowbuildingservices.co.uk</li>
               <li>Phone: 07459 627464</li>
             </ul>
           </section>
@@ -147,7 +147,7 @@ const PrivacyPolicy = () => {
               <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
             </ul>
             <p>
-              To exercise any of these rights, please contact us at rwarreninfo@gmail.com or 07459 627464.
+              To exercise any of these rights, please contact us at info@fallowbuildingservices.co.uk or 07459 627464.
             </p>
           </section>
 
@@ -193,7 +193,7 @@ const PrivacyPolicy = () => {
             <h2>13. Contact Us</h2>
             <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
             <ul>
-              <li><strong>Email:</strong> rwarreninfo@gmail.com</li>
+              <li><strong>Email:</strong> info@fallowbuildingservices.co.uk</li>
               <li><strong>Phone:</strong> 07459 627464</li>
               <li><strong>Company:</strong> Fallow Business Group Ltd trading as Fallow Building Services</li>
               <li><strong>Company Registration Number:</strong> 16532814</li>

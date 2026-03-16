@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 const HeroSection = () => {
   const handleGetQuote = () => {
-    window.location.href = 'mailto:rwarreninfo@gmail.com?subject=Free Quote Request';
+    window.location.href = '/contact#enquiry-form';
   };
 
   return (

@@ -1,0 +1,76 @@
+.cta-block {
+  background: #0a1628;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-block-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-block-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c9a84c;
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+}
+
+.cta-block-body {
+  font-size: 1.1rem;
+  color: #e8e8e8;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.cta-block-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.1s;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.cta-btn-primary {
+  background: #c9a84c;
+  color: #0a1628;
+}
+
+.cta-btn-whatsapp {
+  background: #25D366;
+  color: #ffffff;
+}
+
+.cta-btn-secondary {
+  background: transparent;
+  color: #c9a84c;
+  border: 2px solid #c9a84c;
+}
+
+@media (max-width: 600px) {
+  .cta-block-heading {
+    font-size: 1.5rem;
+  }
+  .cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
