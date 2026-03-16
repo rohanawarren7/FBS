@@ -1,31 +1,33 @@
 :root {
-  /* Backgrounds - Pixel Pushers Colors */
-  --bg-page: #1a1c1b;
-  --bg-card: #302f2c;
-  --bg-light: #dfddd6;
-  
-  /* Text - Pixel Pushers Colors */
-  --text-primary: #d9fb06;
-  --text-secondary: #888680;
-  --text-muted: #302f2c;
-  --text-inverse: #1a1c1b;
-  
-  /* Borders - Pixel Pushers Colors */
-  --border-light: rgba(63, 72, 22, 0.5);
-  --border-medium: #3f4816;
-  --border-strong: #888680;
-  
+  /* Backgrounds */
+  --bg-page: #f5f5f3;
+  --bg-card: #ffffff;
+  --bg-dark: #0a1628;
+  --bg-light: #eeecea;
+
+  /* Text */
+  --text-primary: #0a1628;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --text-inverse: #ffffff;
+  --text-gold: #c9a84c;
+
+  /* Borders */
+  --border-light: rgba(10, 22, 40, 0.12);
+  --border-medium: #d4c5a0;
+  --border-strong: #0a1628;
+
   /* Brand Colors */
-  --brand-primary: #d9fb06;
-  --brand-hover: rgba(217, 251, 6, 0.8);
-  --brand-active: rgba(217, 251, 6, 0.6);
-  
+  --brand-primary: #c9a84c;
+  --brand-hover: #b8943f;
+  --brand-active: #a07d34;
+
   /* Secondary Palette */
-  --secondary-olive: #3f4816;
-  --secondary-yellow: #f8d47a;
-  --secondary-blue: #0073e6;
+  --secondary-olive: #0a1628;
+  --secondary-yellow: #e8d49a;
+  --secondary-blue: #1a3a6b;
   --neutral-white: white;
-  --neutral-light: #dfddd6;
+  --neutral-light: #eeecea;
 }
 
 * {

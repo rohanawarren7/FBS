@@ -1,5 +1,5 @@
 .hero-section {
-  background: var(--bg-page);
+  background: var(--bg-dark);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -26,8 +26,8 @@
 }
 
 .hero-overlay {
-  opacity: 0.7;
-  background-image: linear-gradient(135deg, #000, transparent);
+  opacity: 1;
+  background-image: linear-gradient(135deg, rgba(10, 22, 40, 0.85), rgba(10, 22, 40, 0.5));
   width: 100%;
   height: 100%;
   position: absolute;
@@ -59,7 +59,7 @@
   font-weight: 900;
   font-size: clamp(2.5rem, 4vw, 4rem);
   line-height: 1.1;
-  color: var(--text-primary);
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 24px;
   text-align: center;
@@ -71,7 +71,7 @@
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.5;
-  color: var(--neutral-light);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 40px;
   text-align: center;
   max-width: 40rem;
@@ -88,7 +88,7 @@
 
 .btn-primary {
   background: var(--brand-primary);
-  color: var(--text-inverse);
+  color: var(--bg-dark);
   border: none;
   border-radius: 10rem;
   padding: 1em 2em;
@@ -109,9 +109,8 @@
 
 .btn-primary:hover {
   transform: scale(1.02);
-  opacity: 0.9;
-  background: var(--brand-primary);
-  color: var(--text-inverse);
+  background: var(--brand-hover);
+  color: var(--bg-dark);
 }
 
 .btn-primary:active {
@@ -120,8 +119,8 @@
 
 .btn-secondary {
   background: transparent;
-  color: var(--brand-primary);
-  border: 2px solid var(--brand-primary);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 10rem;
   padding: 1em 2em;
   font-family: 'Inter', Arial, sans-serif;
@@ -140,8 +139,8 @@
 }
 
 .btn-secondary:hover {
-  background: var(--brand-primary);
-  color: var(--text-inverse);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
   transform: scale(1.02);
 }
 
@@ -154,23 +153,23 @@
     padding: 80px 20px 60px;
     min-height: 90vh;
   }
-  
+
   .logo-image {
     max-width: 280px;
   }
-  
+
   .hero-title {
     font-size: clamp(2rem, 6vw, 2.5rem);
   }
-  
+
   .hero-description {
     font-size: 1.1rem;
   }
-  
+
   .hero-cta {
     flex-direction: column;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     width: 100%;
