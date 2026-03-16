@@ -4,7 +4,9 @@ import ServicePage from '../ServicePage';
 const Porches = () => {
   const pageData = {
     title: 'Porches',
-    metaDescription: 'Professional porch installation and construction in London. Enhance your home entrance with beautiful, durable porches from Fallow Building Services.',
+    pageTitle: 'Porch Installation Havering | Porch Builders Essex',
+    metaDescription: 'Professional porch installations in Havering & Essex. Open, closed, and storm porches. CIS-registered. Call 0203 576 5962.',
+    canonicalUrl: 'https://fallowbuildingservices.co.uk/porches',
     heroImage: 'https://images.unsplash.com/photo-1699720435235-e1a4a7ac71e4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxwb3JjaCUyMGVudHJhbmNlfGVufDB8fHx8MTc2MDI4MTQ2MHww&ixlib=rb-4.1.0&q=85',
     description: 'Add character and practical space to your home with a beautifully crafted porch that enhances curb appeal and provides shelter.',
     keywords: 'porch installation London, porch construction, front porch, entrance porch, porch builders London',
