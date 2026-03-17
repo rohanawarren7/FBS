@@ -1,13 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { Phone, MessageCircle, Star, Award, Users, Clock } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { 
+  Phone, 
+  MessageCircle, 
+  Star, 
+  Award, 
+  Users, 
+  Clock,
+  Menu,
+  X,
+  ChevronRight,
+  Home,
+  Building2,
+  Wrench,
+  Mail,
+  Sun,
+  Moon
+} from 'lucide-react';
+import { useTheme } from '../contexts/ThemeContext';
 import './HeroSection.css';
 
 const HeroSection = () => {
   const [counters, setCounters] = useState({ years: 0, projects: 0, rating: 0 });
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
-    // Animate counters on mount
     const duration = 2000;
     const steps = 60;
     const interval = duration / steps;
@@ -34,8 +53,17 @@ const HeroSection = () => {
     window.location.href = '/contact#enquiry-form';
   };
 
-  // Split headline into words for staggered animation
   const headlineWords = "Building excellence across Havering & Essex".split(" ");
+
+  const menuItems = [
+    { name: 'Home', path: '/', icon: Home },
+    { name: 'Extensions', path: '/extensions', icon: Building2 },
+    { name: 'Loft Conversions', path: '/loft-conversions', icon: Building2 },
+    { name: 'Kitchens', path: '/services/kitchen-refurbishments', icon: Wrench },
+    { name: 'Bathrooms', path: '/bathroom-refurbishments', icon: Wrench },
+    { name: 'About', path: '/about', icon: Users },
+    { name: 'Contact', path: '/contact', icon: Mail },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -77,14 +105,21 @@ const HeroSection = () => {
     }
   };
 
-  const scaleIn = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: { 
-      opacity: 1, 
-      scale: 1,
-      transition: {
-        duration: 0.8,
-        ease: [0.22, 1, 0.36, 1]
+  const menuVariants = {
+    closed: { 
+      x: "-100%",
+      transition: { 
+        type: "spring",
+        stiffness: 400,
+        damping: 40
+      }
+    },
+    open: { 
+      x: 0,
+      transition: { 
+        type: "spring",
+        stiffness: 400,
+        damping: 40
       }
     }
   };
@@ -96,8 +131,97 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="hero-section">
-      {/* Background with Parallax Effect */}
+    <section className="hero-section-with-menu">
+      {/* Side Menu Overlay */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              className="menu-backdrop"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsMenuOpen(false)}
+            />
+            
+            {/* Side Menu Panel */}
+            <motion.div
+              className="side-menu"
+              variants={menuVariants}
+              initial="closed"
+              animate="open"
+              exit="closed"
+            >
+              <div className="side-menu-header">
+                <img 
+                  src="/images/logo-nav.png" 
+                  alt="Fallow Building Services" 
+                  className="side-menu-logo"
+                />
+                <button 
+                  className="menu-close-btn"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <X size={24} />
+                </button>
+              </div>
+
+              <nav className="side-menu-nav">
+                {menuItems.map((item, index) => {
+                  const Icon = item.icon;
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
+                    >
+                      <Link 
+                        to={item.path} 
+                        className="side-menu-link"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <Icon size={20} />
+                        <span>{item.name}</span>
+                        <ChevronRight size={16} className="link-arrow" />
+                      </Link>
+                    </motion.div>
+                  );
+                })}
+              </nav>
+
+              <div className="side-menu-footer">
+                <button onClick={toggleTheme} className="theme-toggle-btn">
+                  {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+                  <span>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
+                </button>
+                
+                <a href="tel:02035765962" className="side-menu-phone">
+                  <Phone size={18} />
+                  <span>0203 576 5962</span>
+                </a>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+
+      {/* Menu Toggle Button - Fixed on Hero */}
+      <motion.button
+        className="hero-menu-toggle"
+        onClick={() => setIsMenuOpen(true)}
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Menu size={24} />
+        <span>Menu</span>
+      </motion.button>
+
+      {/* Background */}
       <div className="hero-background">
         <motion.img 
           src="/images/hero-construction.jpg"
@@ -108,7 +232,6 @@ const HeroSection = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
         />
         <div className="hero-overlay"></div>
-        {/* Animated gradient overlay */}
         <motion.div 
           className="hero-gradient-overlay"
           initial={{ opacity: 0 }}
@@ -118,12 +241,12 @@ const HeroSection = () => {
       </div>
       
       <div className="hero-content">
-        {/* Logo with reveal animation */}
+        {/* Logo */}
         <motion.div 
           className="hero-logo"
-          variants={scaleIn}
-          initial="hidden"
-          animate="visible"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.img
             src="/images/logo-large.png"
@@ -134,7 +257,7 @@ const HeroSection = () => {
           />
         </motion.div>
         
-        {/* Staggered headline animation */}
+        {/* Headline */}
         <motion.h1 
           className="hero-title"
           variants={containerVariants}
@@ -152,7 +275,7 @@ const HeroSection = () => {
           ))}
         </motion.h1>
         
-        {/* Description with fade in */}
+        {/* Description */}
         <motion.p 
           className="hero-description"
           variants={fadeInUp}
@@ -164,7 +287,7 @@ const HeroSection = () => {
           and commercial projects across Havering and Essex
         </motion.p>
         
-        {/* CTA Buttons with magnetic hover effect */}
+        {/* CTA Buttons */}
         <motion.div 
           className="hero-cta"
           variants={fadeInUp}
@@ -203,7 +326,7 @@ const HeroSection = () => {
           </motion.a>
         </motion.div>
 
-        {/* Trust Signals Bar */}
+        {/* Trust Signals */}
         <motion.div 
           className="trust-signals"
           initial={{ opacity: 0, y: 30 }}
@@ -236,7 +359,6 @@ const HeroSection = () => {
             })}
           </div>
 
-          {/* Trust badges row */}
           <motion.div 
             className="trust-badges"
             initial={{ opacity: 0 }}

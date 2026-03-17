@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import LandingPage from './components/LandingPage';
 import Navigation from './components/Navigation';
@@ -28,6 +28,15 @@ import RomfordPage from './components/pages/RomfordPage';
 import AboutPage from './components/pages/AboutPage';
 import ContactPage from './components/pages/ContactPage';
 
+// Navigation wrapper that conditionally shows nav based on route
+const NavigationWrapper = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+  
+  // Don't show traditional navigation on homepage (uses integrated side menu in hero)
+  return !isHomePage ? <Navigation /> : null;
+};
+
 function App() {
   return (
     <ThemeProvider>
@@ -38,7 +47,7 @@ function App() {
             Skip to main content
           </a>
           
-          <Navigation />
+          <NavigationWrapper />
           <main id="main-content">
             <Routes>
               <Route path="/" element={<LandingPage />} />
