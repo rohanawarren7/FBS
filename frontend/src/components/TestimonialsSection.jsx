@@ -67,14 +67,14 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <div className="rating-score">
-            <span className="rating-number">4.9</span>
+            <span className="rating-number">5.0</span>
             <div className="rating-stars">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={24} fill="currentColor" />
               ))}
             </div>
           </div>
-          <p className="rating-text">Average rating from 50+ reviews</p>
+          <p className="rating-text">Perfect rating from 50+ reviews</p>
           <a 
             href="https://www.bark.com/en/gb/company/fallow-building-services/Gw6Nv/" 
             target="_blank" 

@@ -16,13 +16,14 @@ import {
   Wrench,
   Mail,
   Sun,
-  Moon
+  Moon,
+  Heart
 } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import './HeroSection.css';
 
 const HeroSection = () => {
-  const [counters, setCounters] = useState({ years: 0, projects: 0, rating: 0 });
+  const [counters, setCounters] = useState({ years: 0, clients: 0, rating: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
@@ -39,8 +40,8 @@ const HeroSection = () => {
       
       setCounters({
         years: Math.round(15 * easeOutQuart),
-        projects: Math.round(500 * easeOutQuart),
-        rating: parseFloat((4.9 * easeOutQuart).toFixed(1))
+        clients: Math.round(500 * easeOutQuart),
+        rating: Math.round(5 * easeOutQuart)
       });
 
       if (step >= steps) clearInterval(timer);
@@ -126,8 +127,8 @@ const HeroSection = () => {
 
   const stats = [
     { icon: Clock, value: counters.years, suffix: '+', label: 'Years Experience' },
-    { icon: Users, value: counters.projects, suffix: '+', label: 'Projects Completed' },
-    { icon: Star, value: counters.rating, suffix: '/5', label: 'Bark Rating' }
+    { icon: Heart, value: counters.clients, suffix: '+', label: 'Happy Clients' },
+    { icon: Star, value: counters.rating, suffix: '/5', label: 'Star Rating' }
   ];
 
   return (
