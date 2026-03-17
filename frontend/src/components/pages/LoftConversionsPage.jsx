@@ -29,7 +29,7 @@ const LoftConversionsPage = () => {
           <div className="service-container">
             <h2 className="section-title">Overview</h2>
             <p>A loft conversion creates usable living space from an empty roof void—typically adding a bedroom, home office, or additional bathroom without extending your property's footprint. Across Havering's 1930s and post-war housing stock, most loft conversions fall under permitted development rights, avoiding the need for planning permission.</p>
-            <p style={{ marginTop: '16px' }}>Fallow Building Services manages the full process: structural survey, design and engineer coordination, Building Control compliance, all construction trades, staircase installation, and final decoration. Director Rohan Warren leads every project with one point of contact from initial assessment to 12-month defect liability sign-off.</p>
+            <p style={{ marginTop: '16px' }}>Fallow Building Services manages the full process: structural survey, design and engineer coordination, Building Control compliance, all construction trades, staircase installation, and final decoration. Our team provides one dedicated point of contact from initial assessment through to 12-month defect liability sign-off.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Types of Loft Conversions We Offer</h2>
             <div className="benefits-grid">
@@ -81,7 +81,7 @@ const LoftConversionsPage = () => {
               {[
                 { title: 'Local to Havering and Essex', desc: 'Based in Rainham, operating across Havering, Barking & Dagenham, and East London. We know the local housing stock and Havering Council\'s Building Control expectations.' },
                 { title: 'CIS-Registered', desc: 'Registered under the Construction Industry Scheme. All tax and compliance obligations met. A traceable, legitimate contractor.' },
-                { title: 'Single Point of Contact', desc: 'Director Rohan Warren leads every loft conversion. One person responsible from survey to completion.' },
+                { title: 'Single Point of Contact', desc: 'One dedicated team member leads every loft conversion. One person responsible from survey to completion — no handoffs, no confusion.' },
                 { title: '12-Month Defect Liability Period', desc: 'If anything goes wrong in the first year—cracking, leaks, poor finishes—we return and fix it at no additional cost.' },
                 { title: 'Fully Insured', desc: 'Public liability and employers\' liability insurance. Insurance certificates provided on request.' },
                 { title: 'Transparent Staged Payments', desc: 'No large upfront deposits. 25% commencement, 25% shell completion, 30% first fix, 20% on completion.' },

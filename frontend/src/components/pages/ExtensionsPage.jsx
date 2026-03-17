@@ -29,7 +29,7 @@ const ExtensionsPage = () => {
           <div className="service-container">
             <h2 className="section-title">Overview</h2>
             <p>A well-planned extension adds space and value without the disruption of moving. Whether you need a larger kitchen, ground-floor bedroom, or extra living space, Fallow Building Services manages the full process—from initial survey and structural calculations through Havering Council planning and Building Control sign-off to final handover.</p>
-            <p style={{ marginTop: '16px' }}>We work across Romford, Hornchurch, Rainham, and the wider Havering borough, primarily with 1930s semi-detached and inter-war housing stock where permitted development rights often apply. Every project is led by director Rohan Warren with a single point of contact throughout. No subcontractor lottery. No surprise costs.</p>
+            <p style={{ marginTop: '16px' }}>We work across Romford, Hornchurch, Rainham, and the wider Havering borough, primarily with 1930s semi-detached and inter-war housing stock where permitted development rights often apply. Every project has a dedicated point of contact throughout — someone who knows your build, not a rotating account manager. No subcontractor lottery. No surprise costs.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Types of Home Extensions We Offer</h2>
             <div className="benefits-grid">
@@ -91,7 +91,7 @@ const ExtensionsPage = () => {
               {[
                 { title: 'Local to Havering and Essex', desc: 'We\'re based in Rainham and work exclusively across Havering, Barking & Dagenham, and East London. We know Havering Council\'s planning requirements, local Building Control inspectors, and the housing stock. We\'re not a borough-hopping franchise.' },
                 { title: 'CIS-Registered', desc: 'Fallow Building Services is registered under the Construction Industry Scheme. All tax and compliance obligations are met. You\'re working with a legitimate, traceable contractor.' },
-                { title: 'Single Point of Contact', desc: 'Director Rohan Warren leads every project. You\'re not handed between estimators, project managers, and site supervisors. One person owns your job from survey to sign-off.' },
+                { title: 'Single Point of Contact', desc: 'You won\'t be passed between estimators, project managers, and site supervisors. One dedicated person owns your job from survey to sign-off — someone who knows the detail of your project.' },
                 { title: '12-Month Defect Liability Period', desc: 'If anything goes wrong in the first year after completion—cracking, leaks, poor finishes—we return and remedy it at no extra cost. This isn\'t a vague goodwill gesture. It\'s a written commitment.' },
                 { title: 'Fully Insured', desc: 'We carry public liability and employers\' liability insurance. If something goes wrong on site, you\'re covered. We provide insurance certificates on request.' },
                 { title: 'Transparent Staged Payments', desc: 'No large upfront payments. Our standard payment structure is 25% on commencement, 25% at first-floor or roof stage, 30% at first fix, and 20% on completion. You pay as work progresses, not before it starts.' },

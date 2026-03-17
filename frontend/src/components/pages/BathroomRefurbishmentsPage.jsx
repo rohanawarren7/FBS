@@ -29,7 +29,7 @@ const BathroomRefurbishmentsPage = () => {
           <div className="service-container">
             <h2 className="section-title">Overview</h2>
             <p>A bathroom refurbishment is one of the highest-return home improvements you can make. Fallow Building Services delivers complete bathroom renovations across Havering and Essex—from full strip-out and refit through to en-suite installations and wet room conversions. Supply and fit, or fit-only using your own materials.</p>
-            <p style={{ marginTop: '16px' }}>Director Rohan Warren leads every project. One point of contact from initial survey through to completion and the 12-month defect liability period. All our bathroom work is carried out by qualified tradespeople—tilers, plumbers, and electricians—coordinated by us so you don't have to manage multiple contractors.</p>
+            <p style={{ marginTop: '16px' }}>You get one dedicated point of contact from initial survey through to completion and the 12-month defect liability period. All our bathroom work is carried out by qualified tradespeople—tilers, plumbers, and electricians—coordinated by our team so you don't have to manage multiple contractors.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>What We Cover</h2>
             <div className="benefits-grid">

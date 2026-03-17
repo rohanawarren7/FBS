@@ -29,7 +29,7 @@ const ExternalWallInsulationPage = () => {
           <div className="service-container">
             <h2 className="section-title">Overview</h2>
             <p>External wall insulation (EWI) is one of the most effective energy efficiency upgrades available for solid-wall properties. Across Havering's pre-1920 and inter-war housing stock, cavity wall insulation is often not possible — EWI is the solution. Fallow Building Services installs complete EWI systems from survey and specification through to final render or brick-slip finish.</p>
-            <p style={{ marginTop: '16px' }}>We work with PAS 2035-compliant systems and can provide guidance on ECO4 eligibility. Every project is assessed individually — we do not offer one-size-fits-all solutions. Director Rohan Warren leads all projects with a single point of contact throughout.</p>
+            <p style={{ marginTop: '16px' }}>We work with PAS 2035-compliant systems and can provide guidance on ECO4 eligibility. Every project is assessed individually — we do not offer one-size-fits-all solutions. We provide a single point of contact throughout — from initial assessment to completed installation.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>EWI Systems We Install</h2>
             <div className="benefits-grid">

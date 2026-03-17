@@ -40,9 +40,9 @@ const Footer = () => {
           <div className="footer-contact">
             <h3 className="footer-title">GET IN TOUCH</h3>
             <div className="contact-items">
-              <a href="tel:07459627464" className="contact-item">
+              <a href="tel:02035765962" className="contact-item">
                 <Phone size={20} />
-                <span>07459 627464</span>
+                <span>0203 576 5962</span>
               </a>
               <a href="https://wa.me/+447459627464" target="_blank" rel="noopener noreferrer" className="contact-item">
                 <MessageCircle size={20} />

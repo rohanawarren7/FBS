@@ -28,9 +28,9 @@ const AboutPage = () => {
             <p>Fallow Building Services is the trading name of Fallow Business Group Ltd (Companies House registration: 16532814), a building contractor based at 6 Sunningdale Road, Rainham, Essex, RM13 7BD.</p>
             <p style={{ marginTop: '16px' }}>We carry out residential and commercial building work across the London Borough of Havering, Barking &amp; Dagenham, Redbridge, and surrounding Essex areas. Our primary work is home extensions, loft conversions, renovations, roofing, external wall insulation, and planned and reactive property maintenance for commercial clients.</p>
 
-            <h2 className="section-title" style={{ marginTop: '40px' }}>Director — Rohan Warren</h2>
-            <p>Fallow Building Services is led by director Rohan Warren. Rohan leads every project personally — from initial site survey and quotation through to Building Control sign-off and final handover. There are no account managers between you and the person responsible for your build.</p>
-            <p style={{ marginTop: '16px' }}>This structure is deliberate. In our experience, most problems on building projects happen when information passes between too many people. One director, one point of contact, one person accountable from start to finish.</p>
+            <h2 className="section-title" style={{ marginTop: '40px' }}>How We Operate</h2>
+            <p>Every project we take on is managed by our team from initial site survey and quotation through to Building Control sign-off and final handover. You get a dedicated point of contact throughout — someone who knows your project, not a call centre or rotating account manager.</p>
+            <p style={{ marginTop: '16px' }}>This structure is deliberate. In our experience, most problems on building projects happen when information passes between too many people. We keep the chain short: one dedicated contact, consistent accountability from survey to sign-off.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Our Credentials</h2>
             <div className="benefits-grid">

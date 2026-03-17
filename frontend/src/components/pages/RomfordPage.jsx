@@ -29,7 +29,7 @@ const RomfordPage = () => {
           <div className="service-container">
             <h2 className="section-title">Building Contractor in Romford</h2>
             <p>Fallow Building Services is based in Rainham, five minutes from Romford town centre. We carry out building work across the RM1, RM2, RM3, RM5, and RM7 postcodes daily. Romford's housing stock—predominantly 1930s semi-detached properties across the residential streets surrounding the town centre—is exactly the type of property we specialise in. We understand permitted development limits, local planning requirements, and the structural characteristics of inter-war Romford housing.</p>
-            <p style={{ marginTop: '16px' }}>Director Rohan Warren leads every Romford project personally. One point of contact from survey to completion. Fixed-price quotes. CIS-registered. Fully insured.</p>
+            <p style={{ marginTop: '16px' }}>Our team provides one dedicated point of contact from survey to completion. Fixed-price quotes. CIS-registered. Fully insured.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Services Available in Romford</h2>
             <div className="benefits-grid">

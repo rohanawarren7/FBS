@@ -62,8 +62,8 @@ const ServicePage = ({
               <button onClick={handleGetQuote} className="btn-primary">
                 GET A FREE QUOTE
               </button>
-              <a href="tel:07459627464" className="btn-secondary">
-                <Phone size={20} /> 07459 627464
+              <a href="tel:02035765962" className="btn-secondary">
+                <Phone size={20} /> 0203 576 5962
               </a>
             </div>
           </div>
@@ -153,8 +153,8 @@ const ServicePage = ({
                 GET YOUR FREE QUOTE
               </button>
               <div className="cta-contact">
-                <a href="tel:07459627464" className="contact-link">
-                  <Phone size={20} /> 07459 627464
+                <a href="tel:02035765962" className="contact-link">
+                  <Phone size={20} /> 0203 576 5962
                 </a>
                 <a href="mailto:info@fallowbuildingservices.co.uk" className="contact-link">
                   <Mail size={20} /> info@fallowbuildingservices.co.uk
