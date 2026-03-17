@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  FolderOpen, 
-  Image as ImageIcon, 
   Filter,
   X,
   ChevronLeft,
@@ -25,60 +23,78 @@ const ProjectGallery = () => {
     { id: 'bathroom', label: 'Bathrooms' }
   ];
 
-  // Placeholder projects - to be replaced with actual photos
+  // Project photos - update titles/descriptions after viewing images
   const projects = [
     {
       id: 1,
-      title: 'Double-Storey Extension',
+      title: 'Project Showcase 1',
       category: 'extensions',
-      location: 'Romford, Essex',
+      location: 'Havering, Essex',
       year: '2024',
-      image: '/images/hero-extensions.jpg',
-      hasBeforeAfter: true
+      image: '/images/projects/project-1.jpg',
+      hasBeforeAfter: false
     },
     {
       id: 2,
-      title: 'Modern Kitchen Refurbishment',
-      category: 'kitchen',
-      location: 'Hornchurch, Essex',
+      title: 'Project Showcase 2',
+      category: 'renovations',
+      location: 'Romford, Essex',
       year: '2024',
-      image: '/images/hero-kitchen.jpg',
-      hasBeforeAfter: true
+      image: '/images/projects/project-2.jpg',
+      hasBeforeAfter: false
     },
     {
       id: 3,
-      title: 'Loft Conversion with Dormer',
-      category: 'loft',
-      location: 'Rainham, Essex',
-      year: '2023',
-      image: '/images/hero-loft-conversions.jpg',
+      title: 'Project Showcase 3',
+      category: 'kitchen',
+      location: 'Hornchurch, Essex',
+      year: '2024',
+      image: '/images/projects/project-3.jpg',
       hasBeforeAfter: false
     },
     {
       id: 4,
-      title: 'Complete Home Renovation',
-      category: 'renovations',
-      location: 'Upminster, Essex',
+      title: 'Project Showcase 4',
+      category: 'bathroom',
+      location: 'Rainham, Essex',
       year: '2023',
-      image: '/images/hero-home-renovations.jpg',
-      hasBeforeAfter: true
+      image: '/images/projects/project-4.jpg',
+      hasBeforeAfter: false
     },
     {
       id: 5,
-      title: 'Luxury Bathroom Suite',
-      category: 'bathroom',
-      location: 'Havering, Essex',
-      year: '2024',
-      image: '/images/hero-bathroom.jpg',
-      hasBeforeAfter: true
+      title: 'Project Showcase 5',
+      category: 'extensions',
+      location: 'Upminster, Essex',
+      year: '2023',
+      image: '/images/projects/project-5.jpg',
+      hasBeforeAfter: false
     },
     {
       id: 6,
-      title: 'Single-Storey Extension',
-      category: 'extensions',
+      title: 'Project Showcase 6',
+      category: 'loft',
+      location: 'Havering, Essex',
+      year: '2024',
+      image: '/images/projects/project-6.jpg',
+      hasBeforeAfter: false
+    },
+    {
+      id: 7,
+      title: 'Project Showcase 7',
+      category: 'renovations',
       location: 'Romford, Essex',
       year: '2023',
-      image: '/images/hero-construction.jpg',
+      image: '/images/projects/project-7.jpg',
+      hasBeforeAfter: false
+    },
+    {
+      id: 8,
+      title: 'Project Showcase 8',
+      category: 'kitchen',
+      location: 'Hornchurch, Essex',
+      year: '2024',
+      image: '/images/projects/project-8.jpg',
       hasBeforeAfter: false
     }
   ];
@@ -189,23 +205,6 @@ const ProjectGallery = () => {
               </motion.div>
             ))}
           </AnimatePresence>
-        </motion.div>
-
-        {/* Placeholder Notice */}
-        <motion.div 
-          className="gallery-placeholder-notice"
-          initial={{ opacity: 0 }}
-          animate={isVisible ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-        >
-          <div className="placeholder-icon">
-            <FolderOpen size={32} />
-          </div>
-          <h3>Gallery Coming Soon</h3>
-          <p>
-            We're currently curating our best project photos for this gallery. 
-            Check back soon to see our complete portfolio of work across Havering and Essex.
-          </p>
         </motion.div>
 
         {/* CTA */}
