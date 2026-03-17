@@ -74,12 +74,6 @@ const ServicesSection = () => {
       description: 'Full property management for Havering & East London landlords',
       path: '/services/property-management'
     },
-    {
-      icon: <Key size={40} />,
-      title: 'Guaranteed Rent',
-      description: 'Hassle-free guaranteed rent scheme for Essex landlords',
-      path: '/services/guaranteed-rent'
-    }
   ];
 
   const serviceAreas = ['Romford', 'Hornchurch', 'Rainham', 'Upminster', 'Havering', 'Barking & Dagenham', 'Redbridge'];
@@ -116,7 +110,7 @@ const ServicesSection = () => {
           <div className="category-header">
             <h2 className="category-title">PROPERTY SERVICES</h2>
             <p className="category-description">
-              Professional property management and guaranteed rent services across London boroughs
+              Property maintenance and management services for landlords and property professionals across Havering and East London
             </p>
           </div>
           

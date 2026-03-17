@@ -11,7 +11,6 @@ import Porches from './components/services/Porches';
 import KitchenRefurbishments from './components/services/KitchenRefurbishments';
 import Outbuildings from './components/services/Outbuildings';
 import PropertyManagement from './components/services/PropertyManagement';
-import GuaranteedRent from './components/services/GuaranteedRent';
 
 // Legal Pages
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -51,8 +50,8 @@ function App() {
           <Route path="/outbuildings" element={<Outbuildings />} />
           <Route path="/services/property-management" element={<PropertyManagement />} />
           <Route path="/property-management" element={<PropertyManagement />} />
-          <Route path="/services/guaranteed-rent" element={<GuaranteedRent />} />
-          <Route path="/guaranteed-rent" element={<GuaranteedRent />} />
+          <Route path="/services/guaranteed-rent" element={<Navigate to="/maintenance" replace />} />
+          <Route path="/guaranteed-rent" element={<Navigate to="/maintenance" replace />} />
           {/* New clean-URL SEO pages */}
           <Route path="/extensions" element={<ExtensionsPage />} />
           <Route path="/loft-conversions" element={<LoftConversionsPage />} />

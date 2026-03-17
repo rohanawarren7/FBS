@@ -123,7 +123,7 @@ const PrivacyPolicy = () => {
           <section className="legal-section">
             <h2>7. Data Retention</h2>
             <p>
-              We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, 
+              We retain your personal information for as long as necessary to fulfil the purposes outlined in this Privacy Policy, 
               unless a longer retention period is required by law. Specific retention periods include:
             </p>
             <ul>

@@ -58,7 +58,7 @@ const AboutPage = () => {
                 'Home extensions', 'Loft conversions', 'Home renovations',
                 'Kitchen refurbishments', 'Bathroom refurbishments', 'External wall insulation',
                 'Roofing', 'Porches', 'Outbuildings & garden rooms',
-                'Property maintenance (B2B)', 'Property management', 'Guaranteed rent'
+                'Property maintenance (B2B)', 'Property management'
               ].map(s => <span key={s} className="area-badge">{s}</span>)}
             </div>
 

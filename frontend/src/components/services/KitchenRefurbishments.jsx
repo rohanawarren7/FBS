@@ -14,7 +14,7 @@ const KitchenRefurbishments = () => {
     benefits: [
       {
         title: 'Bespoke Design',
-        description: 'We create custom kitchen designs that maximize space, functionality, and style to suit your lifestyle and budget.'
+        description: 'We create custom kitchen designs that maximise space, functionality, and style to suit your lifestyle and budget.'
       },
       {
         title: 'Quality Fittings',

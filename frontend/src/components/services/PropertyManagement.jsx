@@ -44,7 +44,7 @@ const PropertyManagement = () => {
       },
       {
         title: 'Ongoing Support',
-        description: 'Regular updates, financial reporting, and proactive property care to maximize your investment returns.'
+        description: 'Regular updates, financial reporting, and proactive property care to maximise your investment returns.'
       }
     ]
   };

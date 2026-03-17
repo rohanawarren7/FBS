@@ -55,7 +55,7 @@ const TermsConditions = () => {
             </p>
             <p>
               These terms apply to all services provided, including but not limited to: extensions, home renovations, porches, loft conversions, 
-              kitchen and bathroom refurbishments, outbuildings, property management, and guaranteed rent services.
+              kitchen and bathroom refurbishments, outbuildings, property maintenance, and property management.
             </p>
           </section>
 
@@ -92,7 +92,7 @@ const TermsConditions = () => {
             <h3>4.2 Payment Schedule</h3>
             <p>Unless otherwise agreed in writing, our standard payment terms are:</p>
             <ul>
-              <li><strong>Deposit:</strong> 25-30% upon contract signing (to secure labor and order materials)</li>
+              <li><strong>Deposit:</strong> 25-30% upon contract signing (to secure labour and order materials)</li>
               <li><strong>Stage Payments:</strong> As agreed for larger projects (e.g., at completion of key milestones)</li>
               <li><strong>Final Payment:</strong> Balance due upon practical completion of works</li>
             </ul>
@@ -341,10 +341,6 @@ const TermsConditions = () => {
               and licensing requirements.
             </p>
 
-            <h3>15.3 Guaranteed Rent Schemes</h3>
-            <p>
-              Terms for guaranteed rent schemes are provided in separate agreements and are subject to property assessment and approval.
-            </p>
           </section>
 
           <section className="legal-section">
@@ -395,7 +391,7 @@ const TermsConditions = () => {
             <h2>19. Intellectual Property</h2>
             <p>
               Any designs, plans, or specifications created by us remain our intellectual property unless otherwise agreed in writing. 
-              You have a license to use them for the specific project only.
+              You have a licence to use them for the specific project only.
             </p>
           </section>
 

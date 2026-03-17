@@ -8,11 +8,11 @@ const Porches = () => {
     metaDescription: 'Professional porch installations in Havering & Essex. Open, closed, and storm porches. CIS-registered. Call 0203 576 5962.',
     canonicalUrl: 'https://fallowbuildingservices.co.uk/porches',
     heroImage: '/images/hero-porches.jpg',
-    description: 'Add character and practical space to your home with a beautifully crafted porch that enhances curb appeal and provides shelter.',
+    description: 'Add character and practical space to your home with a beautifully crafted porch that enhances kerb appeal and provides shelter.',
     keywords: 'porch installation London, porch construction, front porch, entrance porch, porch builders London',
     benefits: [
       {
-        title: 'Enhanced Curb Appeal',
+        title: 'Enhanced Kerb Appeal',
         description: 'A well-designed porch dramatically improves your home\'s street appeal and creates a welcoming entrance.'
       },
       {

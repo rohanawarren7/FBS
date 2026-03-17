@@ -22,8 +22,7 @@ const Navigation = () => {
 
   const propertyServices = [
     { name: 'Property Maintenance', path: '/maintenance' },
-    { name: 'Property Management', path: '/services/property-management' },
-    { name: 'Guaranteed Rent', path: '/services/guaranteed-rent' }
+    { name: 'Property Management', path: '/services/property-management' }
   ];
 
   return (
