@@ -89,7 +89,7 @@ const ExtensionsPage = () => {
             <h2 className="section-title" style={{ marginTop: '40px' }}>Why Choose Fallow Building Services</h2>
             <div className="benefits-grid">
               {[
-                { title: 'Local to Havering and Essex', desc: 'We\'re based in Rainham and work exclusively across Havering, Barking & Dagenham, and East London. We know Havering Council\'s planning requirements, local Building Control inspectors, and the housing stock. We\'re not a borough-hopping franchise.' },
+                { title: 'Local Knowledge, Broader Reach', desc: 'We\'re based in Rainham and do much of our work across Havering and East London. We know Havering Council\'s planning requirements, local Building Control inspectors, and the housing stock — and we take on projects across Essex and wider London where the work suits us.' },
                 { title: 'CIS-Registered', desc: 'Fallow Building Services is registered under the Construction Industry Scheme. All tax and compliance obligations are met. You\'re working with a legitimate, traceable contractor.' },
                 { title: 'Single Point of Contact', desc: 'You won\'t be passed between estimators, project managers, and site supervisors. One dedicated person owns your job from survey to sign-off — someone who knows the detail of your project.' },
                 { title: '12-Month Defect Liability Period', desc: 'If anything goes wrong in the first year after completion—cracking, leaks, poor finishes—we return and remedy it at no extra cost. This isn\'t a vague goodwill gesture. It\'s a written commitment.' },

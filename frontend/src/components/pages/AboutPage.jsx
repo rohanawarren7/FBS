@@ -51,7 +51,7 @@ const AboutPage = () => {
             <h2 className="section-title" style={{ marginTop: '40px' }}>How We Work</h2>
             <p>We provide fixed-price quotes after a free site survey. No hourly rates. No provisional sums on core construction work. An initial payment is made on signing the Commencement of Works agreement, with the balance structured across project milestones.</p>
             <p style={{ marginTop: '16px' }}>Our standard payment structure is: an initial payment on signing the Commencement of Works agreement, 25% at key structural stage (first-floor level, roof stage, or shell completion depending on project type), 30% at first fix, and 20% on completion. You pay as work progresses and value is delivered.</p>
-            <p style={{ marginTop: '16px' }}>We work exclusively in Havering and adjacent boroughs. This is not a constraint — it's a choice. We know this area, we know the housing stock, we know Havering Council's planning and Building Control processes. Local knowledge makes us better at our jobs.</p>
+            <p style={{ marginTop: '16px' }}>Our roots are in Havering — we're based in Rainham and do a significant proportion of our work across Romford, Hornchurch, and the wider borough. We also work across East London and Essex, and take on projects further afield where the scope suits us. The local knowledge we've built in Havering — the housing stock, the planning process, the Building Control teams — translates well wherever we work.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>What We Build</h2>
             <div className="areas-list" style={{ marginTop: '12px' }}>

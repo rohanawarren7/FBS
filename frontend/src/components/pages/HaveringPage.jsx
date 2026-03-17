@@ -28,7 +28,7 @@ const HaveringPage = () => {
         <section className="service-benefits">
           <div className="service-container">
             <h2 className="section-title">Local Building Contractor in Havering</h2>
-            <p>Fallow Building Services is based in Rainham, in the London Borough of Havering. We work exclusively across Havering and adjacent boroughs—we're not a national company or franchise with no local knowledge. We've built our reputation on transparent pricing, dedicated project management, and work that stands up to Havering Council Building Control.</p>
+            <p>Fallow Building Services is based in Rainham, in the London Borough of Havering. Much of our work is across Havering and the surrounding areas — Romford, Hornchurch, Rainham, Barking &amp; Dagenham, and East London — and we take on projects across Essex and wider London too. We've built our reputation on transparent pricing, dedicated project management, and work that stands up to Havering Council Building Control.</p>
             <p style={{ marginTop: '16px' }}>We know Havering's housing stock intimately—the 1930s semi-detached properties across Romford, Hornchurch, and Emerson Park, the post-war housing in Harold Hill and Elm Park, the Victorian terraces in Gidea Park. We know which properties suit which types of extension, where the planning constraints apply, and how to work in restricted residential streets.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Services Available in Havering</h2>
