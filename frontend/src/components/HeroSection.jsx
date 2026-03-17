@@ -209,18 +209,13 @@ const HeroSection = () => {
       </AnimatePresence>
 
       {/* Menu Toggle Button - Fixed on Hero */}
-      <motion.button
+      <button
         className="hero-menu-toggle"
         onClick={() => setIsMenuOpen(true)}
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.5, duration: 0.5 }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
       >
         <Menu size={24} />
         <span>Menu</span>
-      </motion.button>
+      </button>
 
       {/* Background */}
       <div className="hero-background">
