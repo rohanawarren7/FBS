@@ -15,7 +15,7 @@ const LandingPage = () => {
         <title>Fallow Building Services | Building Contractor Havering &amp; Essex</title>
         <meta name="description" content="Building contractor in Havering & Essex. Extensions, loft conversions, renovations, roofing, property maintenance. CIS-registered. Call 0203 576 5962." />
         <meta property="og:title" content="Fallow Building Services | Building Contractor Havering & Essex" />
-        <meta property="og:description" content="Expert construction and property management services across Havering and Essex. 15+ years experience, 500+ projects completed." />
+        <meta property="og:description" content="Expert construction and property management services across Havering and Essex. 5+ years experience, 100+ happy clients." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://fallowbuildingservices.co.uk/" />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/" />

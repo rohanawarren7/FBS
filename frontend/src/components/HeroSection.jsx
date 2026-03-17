@@ -39,8 +39,8 @@ const HeroSection = () => {
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
       
       setCounters({
-        years: Math.round(15 * easeOutQuart),
-        clients: Math.round(500 * easeOutQuart),
+        years: Math.round(5 * easeOutQuart),
+        clients: Math.round(100 * easeOutQuart),
         rating: Math.round(5 * easeOutQuart)
       });
 

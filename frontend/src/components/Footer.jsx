@@ -33,7 +33,7 @@ const Footer = () => {
 
   const trustBadges = [
     { icon: Shield, text: 'CIS Registered' },
-    { icon: Award, text: '15+ Years Experience' },
+    { icon: Award, text: '5+ Years Experience' },
     { icon: CheckCircle2, text: 'Fully Insured' },
     { icon: Clock, text: 'Reliable Service' }
   ];

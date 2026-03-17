@@ -8,8 +8,7 @@ import {
   PaintBucket, 
   Warehouse, 
   Key, 
-  ArrowRight,
-  ArrowUpRight
+  ArrowRight
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import './ServicesSection.css';
@@ -178,13 +177,13 @@ const ServicesSection = () => {
   ];
 
   const serviceAreas = [
-    { name: 'Romford', count: '50+' },
-    { name: 'Hornchurch', count: '40+' },
-    { name: 'Rainham', count: '35+' },
-    { name: 'Upminster', count: '25+' },
-    { name: 'Havering', count: '200+' },
-    { name: 'Barking & Dagenham', count: '30+' },
-    { name: 'Redbridge', count: '45+' }
+    'Romford',
+    'Hornchurch',
+    'Rainham',
+    'Upminster',
+    'Havering',
+    'Barking & Dagenham',
+    'Redbridge'
   ];
 
   const containerVariants = {
@@ -393,37 +392,23 @@ const ServicesSection = () => {
           
           <div className="areas-grid">
             {serviceAreas.map((area, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 className="area-card"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isVisible ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.4, delay: 0.7 + (index * 0.05) }}
-                whileHover={{ 
-                  y: -4, 
+                whileHover={{
+                  y: -4,
                   boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)"
                 }}
               >
-                <span className="area-name">{area.name}</span>
-                <span className="area-count">{area.count} projects</span>
+                <span className="area-name">{area}</span>
               </motion.div>
             ))}
           </div>
         </motion.div>
 
-        {/* CTA */}
-        <motion.div 
-          className="services-cta"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-        >
-          <p className="services-cta-text">Not sure which service you need?</p>
-          <Link to="/contact" className="services-cta-link">
-            <span>Get free advice</span>
-            <ArrowUpRight size={18} />
-          </Link>
-        </motion.div>
       </div>
     </section>
   );

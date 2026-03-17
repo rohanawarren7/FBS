@@ -375,48 +375,9 @@
 }
 
 .area-name {
-  display: block;
   font-size: 1rem;
   font-weight: 600;
   color: hsl(var(--foreground));
-  margin-bottom: 0.25rem;
-}
-
-.area-count {
-  font-size: 0.8125rem;
-  color: var(--brand-gold);
-  font-weight: 500;
-}
-
-/* CTA */
-.services-cta {
-  margin-top: 4rem;
-  text-align: center;
-  padding: 2rem;
-  background: hsl(var(--muted));
-  border-radius: 1rem;
-}
-
-.services-cta-text {
-  font-size: 1.0625rem;
-  color: hsl(var(--muted-foreground));
-  margin-bottom: 0.75rem;
-}
-
-.services-cta-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--brand-gold);
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.services-cta-link:hover {
-  gap: 0.75rem;
-  color: var(--brand-gold-hover);
 }
 
 /* Responsive Design */

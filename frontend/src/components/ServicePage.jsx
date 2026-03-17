@@ -307,7 +307,7 @@ const ServicePage = ({
               <div className="quick-info-divider" />
               <div className="quick-info-item">
                 <Clock size={16} />
-                <span>15+ Years Experience</span>
+                <span>5+ Years Experience</span>
               </div>
               <div className="quick-info-divider" />
               <div className="quick-info-item">
