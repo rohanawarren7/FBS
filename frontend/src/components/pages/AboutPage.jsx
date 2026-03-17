@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import PageLayout from '../PageLayout';
 import CTABlock from '../CTABlock';
-import '../ServicePage.css';
 
 const AboutPage = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -16,13 +16,11 @@ const AboutPage = () => {
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Organization","name":"Fallow Building Services","legalName":"Fallow Business Group Ltd","url":"https://fallowbuildingservices.co.uk","logo":"https://fallowbuildingservices.co.uk/images/logo-large.png","contactPoint":{"@type":"ContactPoint","telephone":"02035765962","contactType":"customer service","areaServed":"GB","availableLanguage":"English"},"address":{"@type":"PostalAddress","streetAddress":"6 Sunningdale Road","addressLocality":"Rainham","addressRegion":"Essex","postalCode":"RM13 7BD","addressCountry":"GB"},"identifier":{"@type":"PropertyValue","name":"Companies House","value":"16532814"}}`}</script>
       </Helmet>
 
-      <div className="service-page">
-        <section className="service-hero" style={{ background: 'linear-gradient(135deg, #0a1628 60%, #1a2e50)', minHeight: '40vh', display: 'flex', alignItems: 'center' }}>
-          <div className="service-hero-content" style={{ padding: '60px 20px', maxWidth: '900px', margin: '0 auto', width: '100%' }}>
-            <h1 className="service-hero-title">About Fallow Building Services</h1>
-          </div>
-        </section>
-
+      <PageLayout 
+        heroTitle="About Fallow Building Services"
+        heroSubtitle="Your trusted building partner across Havering and Essex"
+        heroImage="/images/hero-construction.jpg"
+      >
         <section className="service-benefits">
           <div className="service-container">
             <h2 className="section-title">Who We Are</h2>
@@ -80,7 +78,7 @@ const AboutPage = () => {
         </section>
 
         <CTABlock />
-      </div>
+      </PageLayout>
     </>
   );
 };

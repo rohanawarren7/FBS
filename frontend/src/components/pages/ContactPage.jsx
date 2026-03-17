@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Phone, MessageCircle, Mail, MapPin } from 'lucide-react';
-import '../ServicePage.css';
-import '../CTABlock.css';
+import PageLayout from '../PageLayout';
 
 const ContactPage = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -16,14 +15,11 @@ const ContactPage = () => {
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"Fallow Building Services","telephone":"02035765962","email":"info@fallowbuildingservices.co.uk","url":"https://fallowbuildingservices.co.uk/contact","address":{"@type":"PostalAddress","streetAddress":"6 Sunningdale Road","addressLocality":"Rainham","addressRegion":"Essex","postalCode":"RM13 7BD","addressCountry":"GB"},"openingHours":"Mo-Fr 08:00-18:00","contactPoint":[{"@type":"ContactPoint","telephone":"02035765962","contactType":"sales","contactOption":"TollFree"},{"@type":"ContactPoint","telephone":"+447459627464","contactType":"customer service","contactOption":"HearingImpairedSupported"}]}`}</script>
       </Helmet>
 
-      <div className="service-page">
-        <section className="service-hero" style={{ background: 'linear-gradient(135deg, #0a1628 60%, #1a2e50)', minHeight: '40vh', display: 'flex', alignItems: 'center' }}>
-          <div className="service-hero-content" style={{ padding: '60px 20px', maxWidth: '900px', margin: '0 auto', width: '100%' }}>
-            <h1 className="service-hero-title">Contact Fallow Building Services</h1>
-            <p className="service-hero-subtitle" style={{ color: '#e8e8e8', marginTop: '16px' }}>Get in touch for a free, no-obligation site survey.</p>
-          </div>
-        </section>
-
+      <PageLayout 
+        heroTitle="Contact Fallow Building Services"
+        heroSubtitle="Get in touch for a free, no-obligation site survey"
+        heroImage="/images/hero-construction.jpg"
+      >
         <section className="service-benefits">
           <div className="service-container">
             <div className="benefits-grid">
@@ -76,7 +72,7 @@ const ContactPage = () => {
             </div>
           </div>
         </section>
-      </div>
+      </PageLayout>
     </>
   );
 };

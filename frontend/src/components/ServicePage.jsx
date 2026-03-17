@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Phone, 
   Mail, 
@@ -11,9 +11,19 @@ import {
   MapPin,
   Clock,
   Shield,
-  Award
+  Award,
+  Menu,
+  X,
+  ChevronRight,
+  Home,
+  Building2,
+  Wrench,
+  Users,
+  Sun,
+  Moon
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useTheme } from '../contexts/ThemeContext';
 import './ServicePage.css';
 
 const ServicePage = ({
@@ -32,10 +42,41 @@ const ServicePage = ({
   testimonials = []
 }) => {
   const [activeStep, setActiveStep] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
   const [heroRef, heroVisible] = useScrollAnimation(0.1);
   const [benefitsRef, benefitsVisible] = useScrollAnimation(0.1);
   const [processRef, processVisible] = useScrollAnimation(0.1);
   const [testimonialsRef, testimonialsVisible] = useScrollAnimation(0.1);
+
+  const menuItems = [
+    { name: 'Home', path: '/', icon: Home },
+    { name: 'Extensions', path: '/extensions', icon: Building2 },
+    { name: 'Loft Conversions', path: '/loft-conversions', icon: Building2 },
+    { name: 'Kitchens', path: '/services/kitchen-refurbishments', icon: Wrench },
+    { name: 'Bathrooms', path: '/bathroom-refurbishments', icon: Wrench },
+    { name: 'About', path: '/about', icon: Users },
+    { name: 'Contact', path: '/contact', icon: Mail },
+  ];
+
+  const menuVariants = {
+    closed: { 
+      x: "-100%",
+      transition: { 
+        type: "spring",
+        stiffness: 400,
+        damping: 40
+      }
+    },
+    open: { 
+      x: 0,
+      transition: { 
+        type: "spring",
+        stiffness: 400,
+        damping: 40
+      }
+    }
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -100,6 +141,95 @@ const ServicePage = ({
       </Helmet>
 
       <div className="service-page">
+        {/* Side Menu Overlay */}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <>
+              {/* Backdrop */}
+              <motion.div
+                className="menu-backdrop"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setIsMenuOpen(false)}
+              />
+              
+              {/* Side Menu Panel */}
+              <motion.div
+                className="side-menu"
+                variants={menuVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+              >
+                <div className="side-menu-header">
+                  <img 
+                    src="/images/logo-nav.png" 
+                    alt="Fallow Building Services" 
+                    className="side-menu-logo"
+                  />
+                  <button 
+                    className="menu-close-btn"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <X size={24} />
+                  </button>
+                </div>
+
+                <nav className="side-menu-nav">
+                  {menuItems.map((item, index) => {
+                    const Icon = item.icon;
+                    return (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.1 }}
+                      >
+                        <Link 
+                          to={item.path} 
+                          className="side-menu-link"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <Icon size={20} />
+                          <span>{item.name}</span>
+                          <ChevronRight size={16} className="link-arrow" />
+                        </Link>
+                      </motion.div>
+                    );
+                  })}
+                </nav>
+
+                <div className="side-menu-footer">
+                  <button onClick={toggleTheme} className="theme-toggle-btn">
+                    {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
+                    <span>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
+                  </button>
+                  
+                  <a href="tel:02035765962" className="side-menu-phone">
+                    <Phone size={18} />
+                    <span>0203 576 5962</span>
+                  </a>
+                </div>
+              </motion.div>
+            </>
+          )}
+        </AnimatePresence>
+
+        {/* Menu Toggle Button - Fixed */}
+        <motion.button
+          className="page-menu-toggle"
+          onClick={() => setIsMenuOpen(true)}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <Menu size={24} />
+          <span>Menu</span>
+        </motion.button>
+
         {/* Hero Section */}
         <section className="service-hero" ref={heroRef}>
           <div className="service-hero-background">
