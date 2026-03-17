@@ -13,6 +13,7 @@ const AboutPage = () => {
         <title>About Fallow Building Services | Essex Building Contractor</title>
         <meta name="description" content="CIS-registered building contractor based in Rainham, Essex. Extensions, loft conversions, renovations. 12-month defect liability. Call 0203 576 5962." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/about" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Organization","name":"Fallow Building Services","legalName":"Fallow Business Group Ltd","url":"https://fallowbuildingservices.co.uk","logo":"https://fallowbuildingservices.co.uk/images/logo-large.png","contactPoint":{"@type":"ContactPoint","telephone":"02035765962","contactType":"customer service","areaServed":"GB","availableLanguage":"English"},"address":{"@type":"PostalAddress","streetAddress":"6 Sunningdale Road","addressLocality":"Rainham","addressRegion":"Essex","postalCode":"RM13 7BD","addressCountry":"GB"},"identifier":{"@type":"PropertyValue","name":"Companies House","value":"16532814"}}`}</script>
       </Helmet>
 
       <div className="service-page">

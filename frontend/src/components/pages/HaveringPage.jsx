@@ -12,7 +12,7 @@ const HaveringPage = () => {
   return (
     <>
       <Helmet>
-        <title>Building Services Havering | Extensions, Loft Conversions, Renovations</title>
+        <title>Building Services Havering | Extensions &amp; Loft Conversions</title>
         <meta name="description" content="Quality building services across Havering. Extensions, loft conversions, roofing, maintenance. Local, CIS-registered. Call 0203 576 5962 for free survey." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/havering" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>

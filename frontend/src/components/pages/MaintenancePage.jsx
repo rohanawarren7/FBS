@@ -22,7 +22,7 @@ const MaintenancePage = () => {
       <div className="service-page">
         <section className="service-hero" style={{ background: 'linear-gradient(135deg, #0a1628 60%, #1a2e50)', minHeight: '40vh', display: 'flex', alignItems: 'center' }}>
           <div className="service-hero-content" style={{ padding: '60px 20px', maxWidth: '900px', margin: '0 auto', width: '100%' }}>
-            <h1 className="service-hero-title">Planned &amp; Reactive Maintenance for Property Managers, Care Homes &amp; Housing Associations in Essex &amp; East London</h1>
+            <h1 className="service-hero-title">Property Maintenance in Essex &amp; East London</h1>
           </div>
         </section>
 

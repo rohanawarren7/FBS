@@ -11,8 +11,9 @@ const ContactPage = () => {
     <>
       <Helmet>
         <title>Contact Fallow Building Services | Free Site Survey</title>
-        <meta name="description" content="Contact Fallow Building Services for a free site survey. Call 0203 576 5962, WhatsApp, or complete our enquiry form. Based in Rainham, serving Havering & Essex." />
+        <meta name="description" content="Contact Fallow Building Services for a free site survey. Call 0203 576 5962, WhatsApp, or use our enquiry form. Rainham-based, serving Havering & Essex." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/contact" />
+        <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"Fallow Building Services","telephone":"02035765962","email":"info@fallowbuildingservices.co.uk","url":"https://fallowbuildingservices.co.uk/contact","address":{"@type":"PostalAddress","streetAddress":"6 Sunningdale Road","addressLocality":"Rainham","addressRegion":"Essex","postalCode":"RM13 7BD","addressCountry":"GB"},"openingHours":"Mo-Fr 08:00-18:00","contactPoint":[{"@type":"ContactPoint","telephone":"02035765962","contactType":"sales","contactOption":"TollFree"},{"@type":"ContactPoint","telephone":"+447459627464","contactType":"customer service","contactOption":"HearingImpairedSupported"}]}`}</script>
       </Helmet>
 
       <div className="service-page">

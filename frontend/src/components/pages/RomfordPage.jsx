@@ -12,7 +12,7 @@ const RomfordPage = () => {
   return (
     <>
       <Helmet>
-        <title>Building Services Romford | Extensions, Loft Conversions, Roofing</title>
+        <title>Building Services Romford | Extensions &amp; Loft Conversions</title>
         <meta name="description" content="Professional building services in Romford. Extensions, loft conversions, bathrooms, roofing. CIS-registered, local team. Call 0203 576 5962 for free survey." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/romford" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
