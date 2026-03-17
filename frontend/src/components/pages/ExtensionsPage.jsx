@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import PageLayout from '../PageLayout';
+import FAQComponent from '../FAQComponent';
 import CTABlock from '../CTABlock';
 import '../ServicePage.css';
 
@@ -99,22 +101,19 @@ const ExtensionsPage = () => {
               ))}
             </div>
 
-            <h2 className="section-title" style={{ marginTop: '40px' }}>Frequently Asked Questions</h2>
-            {[
-              { q: 'Do I need planning permission for a home extension in Havering?', a: 'Many single-storey rear extensions fall under permitted development and don\'t require planning permission, provided they stay within size limits (3 metres for terraced/semi-detached, 4 metres for detached). Double-storey extensions, side extensions wider than half the original house width, and extensions in conservation areas usually need full planning permission. We assess this during the site survey.' },
-              { q: 'How long does a typical extension take to build?', a: 'A single-storey rear extension typically takes 8–12 weeks from groundwork to completion. Double-storey extensions take 12–16 weeks. Planning approval (if required) adds 8 weeks to the timeline before any work starts. Building Control sign-off happens in stages throughout the build.' },
-              { q: 'Can I live in my house during the extension work?', a: 'Yes, in most cases. We seal off the work area with temporary barriers and maintain access to your existing rooms. There will be noise and some dust, particularly during demolition and groundwork phases.' },
-              { q: 'What happens if you find a problem during the build?', a: 'If we encounter unexpected issues—poor ground conditions, hidden structural defects, or asbestos—we stop work, inform you immediately, and provide a written assessment of the additional work required and cost. No work proceeds without your approval.' },
-              { q: 'Will my extension match my existing house?', a: 'We source matching bricks and roof tiles wherever possible. For 1930s Havering housing stock, we can usually find close or exact matches.' },
-              { q: 'Do you handle party wall agreements?', a: 'Yes. If your extension involves work on or near a shared boundary wall, the Party Wall Act applies. We explain your obligations, coordinate party wall surveyor appointments if required, and schedule work to minimise disruption to neighbours.' },
-              { q: 'What guarantees do I get?', a: 'All structural work is covered by our 12-month defect liability period. Building Control sign-off provides independent verification that work meets Building Regulations. For specific products (windows, boilers, waterproofing membranes), manufacturers\' guarantees apply—we provide all documentation at handover.' },
-              { q: 'Can you help with interior design and finishes?', a: 'We\'re builders, not interior designers, but we\'ll guide you through practical finish choices—flooring types, kitchen layouts, lighting positions—and we can recommend trusted kitchen fitters, electricians, and decorators if you want specialist input.' },
-            ].map((faq, i) => (
-              <div key={i} style={{ marginBottom: '24px', borderLeft: '4px solid #c9a84c', paddingLeft: '20px' }}>
-                <h3 style={{ fontWeight: '700', marginBottom: '8px' }}>{faq.q}</h3>
-                <p>{faq.a}</p>
-              </div>
-            ))}
+            <FAQComponent 
+              title="Frequently Asked Questions"
+              faqs={[
+                { question: 'Do I need planning permission for a home extension in Havering?', answer: 'Many single-storey rear extensions fall under permitted development and don\'t require planning permission, provided they stay within size limits (3 metres for terraced/semi-detached, 4 metres for detached). Double-storey extensions, side extensions wider than half the original house width, and extensions in conservation areas usually need full planning permission. We assess this during the site survey.' },
+                { question: 'How long does a typical extension take to build?', answer: 'A single-storey rear extension typically takes 8–12 weeks from groundwork to completion. Double-storey extensions take 12–16 weeks. Planning approval (if required) adds 8 weeks to the timeline before any work starts. Building Control sign-off happens in stages throughout the build.' },
+                { question: 'Can I live in my house during the extension work?', answer: 'Yes, in most cases. We seal off the work area with temporary barriers and maintain access to your existing rooms. There will be noise and some dust, particularly during demolition and groundwork phases.' },
+                { question: 'What happens if you find a problem during the build?', answer: 'If we encounter unexpected issues—poor ground conditions, hidden structural defects, or asbestos—we stop work, inform you immediately, and provide a written assessment of the additional work required and cost. No work proceeds without your approval.' },
+                { question: 'Will my extension match my existing house?', answer: 'We source matching bricks and roof tiles wherever possible. For 1930s Havering housing stock, we can usually find close or exact matches.' },
+                { question: 'Do you handle party wall agreements?', answer: 'Yes. If your extension involves work on or near a shared boundary wall, the Party Wall Act applies. We explain your obligations, coordinate party wall surveyor appointments if required, and schedule work to minimise disruption to neighbours.' },
+                { question: 'What guarantees do I get?', answer: 'All structural work is covered by our 12-month defect liability period. Building Control sign-off provides independent verification that work meets Building Regulations. For specific products (windows, boilers, waterproofing membranes), manufacturers\' guarantees apply—we provide all documentation at handover.' },
+                { question: 'Can you help with interior design and finishes?', answer: 'We\'re builders, not interior designers, but we\'ll guide you through practical finish choices—flooring types, kitchen layouts, lighting positions—and we can recommend trusted kitchen fitters, electricians, and decorators if you want specialist input.' },
+              ]}
+            />
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Areas We Cover</h2>
             <p>Fallow Building Services operates across the London Borough of Havering and surrounding areas in Essex and East London. Our core service area includes Romford, Hornchurch, Upminster, Rainham, Harold Wood, Emerson Park, Elm Park, Collier Row, and Gidea Park. We also cover adjacent areas in Barking &amp; Dagenham and Redbridge.</p>

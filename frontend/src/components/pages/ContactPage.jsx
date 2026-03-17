@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import { motion } from 'framer-motion';
 import { Phone, MessageCircle, Mail, MapPin } from 'lucide-react';
 import PageLayout from '../PageLayout';
 
@@ -22,54 +23,137 @@ const ContactPage = () => {
       >
         <section className="service-benefits">
           <div className="service-container">
-            <div className="benefits-grid">
-              <div className="benefit-card">
-                <Phone size={32} style={{ colour: '#c9a84c', marginBottom: '12px' }} />
+            <motion.div 
+              className="benefits-grid-modern"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <motion.div 
+                className="benefit-card-modern"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                whileHover={{ y: -4 }}
+              >
+                <div className="benefit-icon-wrapper">
+                  <Phone size={32} />
+                </div>
                 <h3 className="benefit-title">Call Us</h3>
                 <p className="benefit-description">
-                  <a href="tel:02035765962" style={{ colour: '#c9a84c', fontSize: '1.2rem', fontWeight: '700' }}>0203 576 5962</a><br />
+                  <a href="tel:02035765962" className="contact-link-large">0203 576 5962</a><br />
                   Monday–Friday, 8:00am–6:00pm
                 </p>
-              </div>
-              <div className="benefit-card">
-                <MessageCircle size={32} style={{ colour: '#25D366', marginBottom: '12px' }} />
+              </motion.div>
+              
+              <motion.div 
+                className="benefit-card-modern"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                whileHover={{ y: -4 }}
+              >
+                <div className="benefit-icon-wrapper whatsapp-icon">
+                  <MessageCircle size={32} />
+                </div>
                 <h3 className="benefit-title">WhatsApp</h3>
                 <p className="benefit-description">
-                  <a href="https://wa.me/447459627464" target="_blank" rel="noopener noreferrer" style={{ colour: '#25D366', fontWeight: '700' }}>Message us on WhatsApp</a><br />
+                  <a href="https://wa.me/447459627464" target="_blank" rel="noopener noreferrer" className="contact-link-whatsapp">Message us on WhatsApp</a><br />
                   Quick responses during business hours
                 </p>
-              </div>
-              <div className="benefit-card">
-                <Mail size={32} style={{ colour: '#c9a84c', marginBottom: '12px' }} />
+              </motion.div>
+              
+              <motion.div 
+                className="benefit-card-modern"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                whileHover={{ y: -4 }}
+              >
+                <div className="benefit-icon-wrapper">
+                  <Mail size={32} />
+                </div>
                 <h3 className="benefit-title">Email</h3>
                 <p className="benefit-description">
-                  <a href="mailto:info@fallowbuildingservices.co.uk" style={{ colour: '#c9a84c', fontWeight: '700' }}>info@fallowbuildingservices.co.uk</a>
+                  <a href="mailto:info@fallowbuildingservices.co.uk" className="contact-link-email">info@fallowbuildingservices.co.uk</a>
                 </p>
-              </div>
-              <div className="benefit-card">
-                <MapPin size={32} style={{ colour: '#c9a84c', marginBottom: '12px' }} />
+              </motion.div>
+              
+              <motion.div 
+                className="benefit-card-modern"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                whileHover={{ y: -4 }}
+              >
+                <div className="benefit-icon-wrapper">
+                  <MapPin size={32} />
+                </div>
                 <h3 className="benefit-title">Address</h3>
                 <p className="benefit-description">
                   6 Sunningdale Road<br />
                   Rainham, Essex<br />
                   RM13 7BD
                 </p>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div id="enquiry-form" style={{ marginTop: '60px', background: '#f8f8f8', padding: '40px', borderRadius: '8px' }}>
-              <h2 className="section-title" style={{ marginTop: 0 }}>Enquiry Form</h2>
-              <p style={{ marginBottom: '24px', colour: '#555' }}>
-                Our full online enquiry form is coming soon. In the meantime, please call <a href="tel:02035765962" style={{ colour: '#c9a84c', fontWeight: '700' }}>0203 576 5962</a>, message us on <a href="https://wa.me/447459627464" target="_blank" rel="noopener noreferrer" style={{ colour: '#25D366', fontWeight: '700' }}>WhatsApp</a>, or email <a href="mailto:info@fallowbuildingservices.co.uk" style={{ colour: '#c9a84c', fontWeight: '700' }}>info@fallowbuildingservices.co.uk</a>.
-              </p>
-              <p style={{ colour: '#555' }}>When getting in touch, please let us know:</p>
-              <ul style={{ margin: '12px 0 0 20px', lineHeight: '2', colour: '#555' }}>
+            <motion.div 
+              id="enquiry-form"
+              className="enquiry-form-section"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <motion.h2 
+                className="section-title"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+              >
+                Enquiry Form
+              </motion.h2>
+              
+              <motion.p 
+                className="form-notice"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
+                Our full online enquiry form is coming soon. In the meantime, please call <a href="tel:02035765962" className="contact-link">0203 576 5962</a>, message us on <a href="https://wa.me/447459627464" target="_blank" rel="noopener noreferrer" className="contact-link-whatsapp">WhatsApp</a>, or email <a href="mailto:info@fallowbuildingservices.co.uk" className="contact-link-email">info@fallowbuildingservices.co.uk</a>.
+              </motion.p>
+              
+              <motion.p 
+                className="form-help"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+              >
+                When getting in touch, please let us know:
+              </motion.p>
+              
+              <motion.ul 
+                className="form-requirements"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+              >
                 <li>Your name and property address</li>
                 <li>Type of work you're considering (e.g. extension, loft conversion, roofing)</li>
                 <li>Approximate timescale</li>
                 <li>Any planning permission questions</li>
-              </ul>
-            </div>
+              </motion.ul>
+            </motion.div>
           </div>
         </section>
       </PageLayout>

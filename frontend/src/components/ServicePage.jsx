@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { useTheme } from '../contexts/ThemeContext';
+import FAQComponent from './FAQComponent';
 import './ServicePage.css';
 
 const ServicePage = ({
@@ -581,27 +582,7 @@ const ServicePage = ({
                 </p>
               </motion.div>
 
-              <motion.div 
-                className="faqs-list"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
-                {faqs.map((faq, index) => (
-                  <motion.div 
-                    key={index}
-                    className="faq-item"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: 0.1 * index }}
-                  >
-                    <h3 className="faq-question">{faq.question}</h3>
-                    <p className="faq-answer">{faq.answer}</p>
-                  </motion.div>
-                ))}
-              </motion.div>
+              <FAQComponent faqs={faqs} />
             </div>
           </section>
         )}
