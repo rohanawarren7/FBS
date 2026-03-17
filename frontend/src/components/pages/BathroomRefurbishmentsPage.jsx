@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import PageLayout from '../PageLayout';
+import FAQComponent from '../FAQComponent';
 import CTABlock from '../CTABlock';
 import '../ServicePage.css';
 
@@ -64,20 +66,17 @@ const BathroomRefurbishmentsPage = () => {
               ))}
             </div>
 
-            <h2 className="section-title" style={{ marginTop: '40px' }}>Frequently Asked Questions</h2>
-            {[
-              { q: 'How long does a bathroom refurbishment take?', a: 'A standard full bathroom refit takes 7–10 working days from strip-out to completion. Smaller projects (suite replacement without retiling) can be completed in 4–5 days. En-suite installations take 10–14 days. Wet rooms take 10–12 days due to tanking and drainage work.' },
-              { q: 'Can I use my bathroom during the refurbishment?', a: 'No. Once we start strip-out, the bathroom is out of action until completion. If it\'s your only bathroom, you\'ll need to arrange alternative facilities.' },
-              { q: 'Do I need Building Control approval for a bathroom refurbishment?', a: 'Usually not, if you\'re refurbishing an existing bathroom. Building Control notification is typically required if you\'re creating a new bathroom where none existed.' },
-              { q: 'Do you supply the bathroom suite and tiles, or just fit?', a: 'Both. We offer a full supply-and-fit service where we source the suite, tiles, fittings, and materials on your behalf—or a fit-only service where you supply your own. We work with trade suppliers and pass on competitive pricing, and can accommodate most styles and budgets from high-street ranges through to bespoke designer products.' },
-              { q: 'How much does a bathroom refurbishment cost in Havering?', a: 'A straightforward bathroom refit (new suite, full retiling, new floor) typically costs between £4,000–£7,000 supply and fit. En-suite installations in an existing bedroom generally cost £5,000–£9,000 depending on plumbing configuration and finishes. Wet room conversions start at around £6,000. These are indicative figures—every bathroom is different and we provide a fixed-price quote after a free site visit.' },
-              { q: 'Can you move the toilet, basin, or shower to a different position?', a: 'Yes, within practical limits. Moving sanitaryware requires rerouting waste and water supply pipework. We assess whether the existing soil stack and joist direction allow the repositioning you want and price the additional plumbing work accordingly. We advise on any constraints before you commit—there\'s no obligation after the site visit.' },
-            ].map((faq, i) => (
-              <div key={i} style={{ marginBottom: '24px', borderLeft: '4px solid #c9a84c', paddingLeft: '20px' }}>
-                <h3 style={{ fontWeight: '700', marginBottom: '8px' }}>{faq.q}</h3>
-                <p>{faq.a}</p>
-              </div>
-            ))}
+            <FAQComponent 
+              title="Frequently Asked Questions"
+              faqs={[
+                { question: 'How long does a bathroom refurbishment take?', answer: 'A standard full bathroom refit takes 7–10 working days from strip-out to completion. Smaller projects (suite replacement without retiling) can be completed in 4–5 days. En-suite installations take 10–14 days. Wet rooms take 10–12 days due to tanking and drainage work.' },
+                { question: 'Can I use my bathroom during the refurbishment?', answer: 'No. Once we start strip-out, the bathroom is out of action until completion. If it\'s your only bathroom, you\'ll need to arrange alternative facilities.' },
+                { question: 'Do I need Building Control approval for a bathroom refurbishment?', answer: 'Usually not, if you\'re refurbishing an existing bathroom. Building Control notification is typically required if you\'re creating a new bathroom where none existed.' },
+                { question: 'Do you supply the bathroom suite and tiles, or just fit?', answer: 'Both. We offer a full supply-and-fit service where we source the suite, tiles, fittings, and materials on your behalf—or a fit-only service where you supply your own. We work with trade suppliers and pass on competitive pricing, and can accommodate most styles and budgets from high-street ranges through to bespoke designer products.' },
+                { question: 'How much does a bathroom refurbishment cost in Havering?', answer: 'A straightforward bathroom refit (new suite, full retiling, new floor) typically costs between £4,000–£7,000 supply and fit. En-suite installations in an existing bedroom generally cost £5,000–£9,000 depending on plumbing configuration and finishes. Wet room conversions start at around £6,000. These are indicative figures—every bathroom is different and we provide a fixed-price quote after a free site visit.' },
+                { question: 'Can you move the toilet, basin, or shower to a different position?', answer: 'Yes, within practical limits. Moving sanitaryware requires rerouting waste and water supply pipework. We assess whether the existing soil stack and joist direction allow the repositioning you want and price the additional plumbing work accordingly. We advise on any constraints before you commit—there\'s no obligation after the site visit.' },
+              ]}
+            />
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Areas We Cover</h2>
             <p>We carry out bathroom refurbishments across Havering, Barking &amp; Dagenham, Redbridge, and surrounding Essex areas.</p>
