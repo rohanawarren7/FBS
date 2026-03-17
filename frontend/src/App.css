@@ -1,50 +1,122 @@
-:root {
-  /* Backgrounds */
-  --bg-page: #f5f5f3;
-  --bg-card: #ffffff;
-  --bg-dark: #0a1628;
-  --bg-light: #eeecea;
-
-  /* Text */
-  --text-primary: #0a1628;
-  --text-secondary: #4a5568;
-  --text-muted: #718096;
-  --text-inverse: #ffffff;
-  --text-gold: #c9a84c;
-
-  /* Borders */
-  --border-light: rgba(10, 22, 40, 0.12);
-  --border-medium: #d4c5a0;
-  --border-strong: #0a1628;
-
-  /* Brand Colors */
-  --brand-primary: #c9a84c;
-  --brand-hover: #b8943f;
-  --brand-active: #a07d34;
-
-  /* Secondary Palette */
-  --secondary-olive: #0a1628;
-  --secondary-yellow: #e8d49a;
-  --secondary-blue: #1a3a6b;
-  --neutral-white: white;
-  --neutral-light: #eeecea;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: var(--bg-page);
-  color: var(--text-primary);
-}
+/* App-specific styles */
 
 .App {
   min-height: 100vh;
-  background: var(--bg-page);
+  background: hsl(var(--background));
+  transition: background-color 0.3s ease;
+}
+
+/* Legacy CSS variable support - maps to new system */
+:root {
+  /* Map old variables to new ones for backward compatibility */
+  --bg-page: var(--bg-page);
+  --bg-card: var(--bg-card);
+  --bg-dark: var(--brand-navy);
+  --bg-light: var(--bg-muted);
+  
+  --text-primary: var(--text-primary);
+  --text-secondary: var(--text-secondary);
+  --text-muted: var(--text-muted);
+  --text-inverse: var(--text-inverse);
+  --text-gold: var(--brand-gold);
+  
+  --border-light: rgba(10, 22, 40, 0.12);
+  --border-medium: #d4c5a0;
+  --border-strong: var(--brand-navy);
+  
+  --brand-primary: var(--brand-gold);
+  --brand-hover: var(--brand-gold-hover);
+  --brand-active: #a07d34;
+  
+  --secondary-olive: var(--brand-navy);
+  --secondary-yellow: var(--brand-gold-light);
+  --secondary-blue: var(--brand-navy-light);
+  --neutral-white: white;
+  --neutral-light: var(--bg-muted);
+}
+
+/* Button Styles */
+.btn-primary {
+  background: var(--brand-gold);
+  color: var(--brand-navy);
+  border: none;
+  border-radius: 10rem;
+  padding: 1em 2em;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 56px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  box-shadow: 0 4px 14px rgba(201, 168, 76, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: var(--brand-gold-hover);
+  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-inverse);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10rem;
+  padding: 1em 2em;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 56px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+/* Container */
+.container {
+  max-width: 87.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
 }
