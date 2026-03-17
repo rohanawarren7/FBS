@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import PageLayout from '../PageLayout';
 import CTABlock from '../CTABlock';
 import '../ServicePage.css';
 
@@ -18,12 +19,7 @@ const RomfordPage = () => {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
-      <div className="service-page">
-        <section className="service-hero" style={{ background: 'linear-gradient(135deg, #0a1628 60%, #1a2e50)', minHeight: '40vh', display: 'flex', alignItems: 'center' }}>
-          <div className="service-hero-content" style={{ padding: '60px 20px', maxWidth: '900px', margin: '0 auto', width: '100%' }}>
-            <h1 className="service-hero-title">Building Services in Romford — Extensions, Loft Conversions, Renovations &amp; Property Maintenance</h1>
-          </div>
-        </section>
+      <PageLayout heroTitle="Building Services in Romford" heroSubtitle="Extensions, loft conversions, renovations & property maintenance. CIS-registered, local Romford team.">
 
         <section className="service-benefits">
           <div className="service-container">
@@ -85,7 +81,7 @@ const RomfordPage = () => {
         </section>
 
         <CTABlock />
-      </div>
+      </PageLayout>
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import PageLayout from '../PageLayout';
 import CTABlock from '../CTABlock';
 import '../ServicePage.css';
 
@@ -18,12 +19,7 @@ const RoofingPage = () => {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
-      <div className="service-page">
-        <section className="service-hero" style={{ background: 'linear-gradient(135deg, #0a1628 60%, #1a2e50)', minHeight: '40vh', display: 'flex', alignItems: 'center' }}>
-          <div className="service-hero-content" style={{ padding: '60px 20px', maxWidth: '900px', margin: '0 auto', width: '100%' }}>
-            <h1 className="service-hero-title">Roofing Contractors in Havering &amp; Romford</h1>
-          </div>
-        </section>
+      <PageLayout heroTitle="Roofing Contractors in Havering & Romford" heroSubtitle="Professional pitched & flat roofing services. Repairs, EPDM, GRP, fascias. Emergency call-out available.">
 
         <section className="service-benefits">
           <div className="service-container">
@@ -77,7 +73,7 @@ const RoofingPage = () => {
         </section>
 
         <CTABlock />
-      </div>
+      </PageLayout>
     </>
   );
 };

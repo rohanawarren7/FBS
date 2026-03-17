@@ -19,7 +19,7 @@ const ExternalWallInsulationPage = () => {
       </Helmet>
 
       <div className="service-page">
-        <section className="service-hero" style={{ background: 'linear-gradient(135deg, #0a1628 60%, #1a2e50)', minHeight: '40vh', display: 'flex', alignItems: 'center' }}>
+        <section className="service-hero" style={{ background: 'linear-gradient(135deg, #0a1628 60%, #1a2e50)', minHeight: '40vh', display: 'flex', alignItems: 'centre' }}>
           <div className="service-hero-content" style={{ padding: '60px 20px', maxWidth: '900px', margin: '0 auto', width: '100%' }}>
             <h1 className="service-hero-title">External Wall Insulation in Essex &amp; Havering</h1>
           </div>
