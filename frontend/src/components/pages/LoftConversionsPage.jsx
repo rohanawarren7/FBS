@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import PageLayout from '../PageLayout';
+import FAQComponent from '../FAQComponent';
 import CTABlock from '../CTABlock';
 import '../ServicePage.css';
 
@@ -89,22 +91,19 @@ const LoftConversionsPage = () => {
               ))}
             </div>
 
-            <h2 className="section-title" style={{ marginTop: '40px' }}>Frequently Asked Questions</h2>
-            {[
-              { q: 'Do I need planning permission for a loft conversion in Havering?', a: 'Most loft conversions fall under permitted development and don\'t require planning permission, provided the additional volume doesn\'t exceed 40 cubic metres (terraced houses) or 50 cubic metres (detached and semi-detached). Rear dormers usually comply. Front dormers, mansard conversions, and works in conservation areas typically need planning permission.' },
-              { q: 'How long does a loft conversion take?', a: 'A typical dormer or hip-to-gable loft conversion takes 6–8 weeks from first day on site to completion. Velux conversions can be completed in 4–6 weeks. Mansard conversions take longer—typically 8–10 weeks. If planning permission is required, add 8 weeks before any work starts.' },
-              { q: 'Can I stay in my house during a loft conversion?', a: 'Yes. Most of the work happens in the loft and roof space. Dust barriers are installed to protect the rest of your house. The most disruptive phase is staircase installation, which may temporarily restrict access to upstairs rooms for 1–2 days.' },
-              { q: 'Will a loft conversion affect my home insurance?', a: 'Yes. You must inform your insurer that you\'re carrying out a loft conversion. Once complete, the loft conversion increases your property\'s rebuild value, so your buildings insurance premium may increase slightly. The Building Control completion certificate is usually required by insurers.' },
-              { q: 'Do I need to strengthen my existing floor joists?', a: 'In most cases, yes. Loft floors in older properties weren\'t designed to carry the live load of a habitable room (typically 150 kg/m²). A structural engineer will calculate whether existing joists are adequate or need supplementing. This is included in the fixed-price quote.' },
-              { q: 'What about fire safety and escape routes?', a: 'Building Regulations require fire-rated plasterboard, a protected escape route (the staircase), and smoke alarms on all floors. We design and install all fire safety measures to meet Havering Building Control requirements.' },
-              { q: 'Can you include an en-suite bathroom in the loft?', a: 'Yes. We install loft bathrooms regularly. Budget an additional £6,000–£12,000 for a basic en-suite. We handle all plumbing, tiling, and waterproofing.' },
-              { q: 'What happens to my energy bills after a loft conversion?', a: 'Properly insulated loft conversions should not significantly increase heating costs. We install insulation to current Building Regulations standards. Some clients see a small reduction in heating costs after conversion.' },
-            ].map((faq, i) => (
-              <div key={i} style={{ marginBottom: '24px', borderLeft: '4px solid #c9a84c', paddingLeft: '20px' }}>
-                <h3 style={{ fontWeight: '700', marginBottom: '8px' }}>{faq.q}</h3>
-                <p>{faq.a}</p>
-              </div>
-            ))}
+            <FAQComponent 
+              title="Frequently Asked Questions"
+              faqs={[
+                { question: 'Do I need planning permission for a loft conversion in Havering?', answer: 'Most loft conversions fall under permitted development and don\'t require planning permission, provided the additional volume doesn\'t exceed 40 cubic metres (terraced houses) or 50 cubic metres (detached and semi-detached). Rear dormers usually comply. Front dormers, mansard conversions, and works in conservation areas typically need planning permission.' },
+                { question: 'How long does a loft conversion take?', answer: 'A typical dormer or hip-to-gable loft conversion takes 6–8 weeks from first day on site to completion. Velux conversions can be completed in 4–6 weeks. Mansard conversions take longer—typically 8–10 weeks. If planning permission is required, add 8 weeks before any work starts.' },
+                { question: 'Can I stay in my house during a loft conversion?', answer: 'Yes. Most of the work happens in the loft and roof space. Dust barriers are installed to protect the rest of your house. The most disruptive phase is staircase installation, which may temporarily restrict access to upstairs rooms for 1–2 days.' },
+                { question: 'Will a loft conversion affect my home insurance?', answer: 'Yes. You must inform your insurer that you\'re carrying out a loft conversion. Once complete, the loft conversion increases your property\'s rebuild value, so your buildings insurance premium may increase slightly. The Building Control completion certificate is usually required by insurers.' },
+                { question: 'Do I need to strengthen my existing floor joists?', answer: 'In most cases, yes. Loft floors in older properties weren\'t designed to carry the live load of a habitable room (typically 150 kg/m²). A structural engineer will calculate whether existing joists are adequate or need supplementing. This is included in the fixed-price quote.' },
+                { question: 'What about fire safety and escape routes?', answer: 'Building Regulations require fire-rated plasterboard, a protected escape route (the staircase), and smoke alarms on all floors. We design and install all fire safety measures to meet Havering Building Control requirements.' },
+                { question: 'Can you include an en-suite bathroom in the loft?', answer: 'Yes. We install loft bathrooms regularly. Budget an additional £6,000–£12,000 for a basic en-suite. We handle all plumbing, tiling, and waterproofing.' },
+                { question: 'What happens to my energy bills after a loft conversion?', answer: 'Properly insulated loft conversions should not significantly increase heating costs. We install insulation to current Building Regulations standards. Some clients see a small reduction in heating costs after conversion.' },
+              ]}
+            />
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Areas We Cover</h2>
             <p>We work regularly across Romford, Hornchurch, Upminster, Rainham, Harold Wood, Emerson Park, Elm Park, Collier Row, and Gidea Park (RM1–RM14 postcodes). We also cover adjacent areas in Barking &amp; Dagenham and Redbridge.</p>
