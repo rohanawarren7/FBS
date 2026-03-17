@@ -14,7 +14,6 @@ const Navigation = () => {
     { name: 'Home Renovations', path: '/services/home-renovations' },
     { name: 'Kitchen Refurbishments', path: '/services/kitchen-refurbishments' },
     { name: 'Bathroom Refurbishments', path: '/bathroom-refurbishments' },
-    { name: 'External Wall Insulation', path: '/external-wall-insulation' },
     { name: 'Roofing', path: '/roofing' },
     { name: 'Porches', path: '/services/porches' },
     { name: 'Outbuildings', path: '/services/outbuildings' }

@@ -27,7 +27,7 @@ const AboutPage = () => {
           <div className="service-container">
             <h2 className="section-title">Who We Are</h2>
             <p>Fallow Building Services is the trading name of Fallow Business Group Ltd (Companies House registration: 16532814), a building contractor based at 6 Sunningdale Road, Rainham, Essex, RM13 7BD.</p>
-            <p style={{ marginTop: '16px' }}>We carry out residential and commercial building work across the London Borough of Havering, Barking &amp; Dagenham, Redbridge, and surrounding Essex areas. Our primary work is home extensions, loft conversions, renovations, roofing, external wall insulation, and planned and reactive property maintenance for commercial clients.</p>
+            <p style={{ marginTop: '16px' }}>We carry out residential and commercial building work across the London Borough of Havering, Barking &amp; Dagenham, Redbridge, and surrounding Essex areas. Our primary work is home extensions, loft conversions, renovations, roofing, and planned and reactive property maintenance for commercial clients.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>How We Operate</h2>
             <p>Every project we take on is managed by our team from initial site survey and quotation through to Building Control sign-off and final handover. You get a dedicated point of contact throughout — someone who knows your project, not a call centre or rotating account manager.</p>
@@ -49,15 +49,15 @@ const AboutPage = () => {
             </div>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>How We Work</h2>
-            <p>We provide fixed-price quotes after a free site survey. No hourly rates. No provisional sums on core construction work. No large upfront deposits.</p>
-            <p style={{ marginTop: '16px' }}>Our standard payment structure is staged against project milestones: 25% on commencement, 25% at key structural stage (first-floor level, roof stage, or shell completion depending on project type), 30% at first fix, and 20% on completion. You pay as you can see the value being delivered — not before.</p>
+            <p>We provide fixed-price quotes after a free site survey. No hourly rates. No provisional sums on core construction work. An initial payment is made on signing the Commencement of Works agreement, with the balance structured across project milestones.</p>
+            <p style={{ marginTop: '16px' }}>Our standard payment structure is: an initial payment on signing the Commencement of Works agreement, 25% at key structural stage (first-floor level, roof stage, or shell completion depending on project type), 30% at first fix, and 20% on completion. You pay as work progresses and value is delivered.</p>
             <p style={{ marginTop: '16px' }}>We work exclusively in Havering and adjacent boroughs. This is not a constraint — it's a choice. We know this area, we know the housing stock, we know Havering Council's planning and Building Control processes. Local knowledge makes us better at our jobs.</p>
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>What We Build</h2>
             <div className="areas-list" style={{ marginTop: '12px' }}>
               {[
                 'Home extensions', 'Loft conversions', 'Home renovations',
-                'Kitchen refurbishments', 'Bathroom refurbishments', 'External wall insulation',
+                'Kitchen refurbishments', 'Bathroom refurbishments',
                 'Roofing', 'Porches', 'Outbuildings & garden rooms',
                 'Property maintenance (B2B)', 'Property management'
               ].map(s => <span key={s} className="area-badge">{s}</span>)}

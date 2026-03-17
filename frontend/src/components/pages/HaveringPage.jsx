@@ -46,10 +46,6 @@ const HaveringPage = () => {
                 <p className="benefit-description">Full bathroom refits, en-suite installations, wet rooms, and shower installations. Supply and fit, or fit-only. <Link to="/bathroom-refurbishments">View bathroom services →</Link></p>
               </div>
               <div className="benefit-card">
-                <h3 className="benefit-title"><Link to="/external-wall-insulation" style={{ color: 'inherit' }}>External Wall Insulation</Link></h3>
-                <p className="benefit-description">EWI for solid-wall properties across Havering. EPS, mineral wool, and wood fibre systems. ECO4 eligibility guidance. Silicone render and brick-slip finishes. <Link to="/external-wall-insulation">View EWI services →</Link></p>
-              </div>
-              <div className="benefit-card">
                 <h3 className="benefit-title"><Link to="/roofing" style={{ color: 'inherit' }}>Roofing</Link></h3>
                 <p className="benefit-description">Pitched and flat roof replacement and repairs. EPDM, GRP, and felt flat roof systems. Emergency call-out for storm damage across Havering. Fascias, soffits, and guttering. <Link to="/roofing">View roofing services →</Link></p>
               </div>

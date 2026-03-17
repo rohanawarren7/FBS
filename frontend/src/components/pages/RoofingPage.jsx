@@ -71,7 +71,6 @@ const RoofingPage = () => {
             </div>
             <p style={{ marginTop: '24px' }}>For property managers, letting agents, and care homes, see our <Link to="/maintenance">Maintenance Services</Link>.</p>
             <div style={{ marginTop: '24px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-              <Link to="/external-wall-insulation" className="area-badge" style={{ textDecoration: 'none' }}>External Wall Insulation</Link>
               <Link to="/extensions" className="area-badge" style={{ textDecoration: 'none' }}>Home Extensions</Link>
             </div>
           </div>

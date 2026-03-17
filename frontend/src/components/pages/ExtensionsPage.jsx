@@ -94,7 +94,7 @@ const ExtensionsPage = () => {
                 { title: 'Single Point of Contact', desc: 'You won\'t be passed between estimators, project managers, and site supervisors. One dedicated person owns your job from survey to sign-off — someone who knows the detail of your project.' },
                 { title: '12-Month Defect Liability Period', desc: 'If anything goes wrong in the first year after completion—cracking, leaks, poor finishes—we return and remedy it at no extra cost. This isn\'t a vague goodwill gesture. It\'s a written commitment.' },
                 { title: 'Fully Insured', desc: 'We carry public liability and employers\' liability insurance. If something goes wrong on site, you\'re covered. We provide insurance certificates on request.' },
-                { title: 'Transparent Staged Payments', desc: 'No large upfront payments. Our standard payment structure is 25% on commencement, 25% at first-floor or roof stage, 30% at first fix, and 20% on completion. You pay as work progresses, not before it starts.' },
+                { title: 'Transparent Staged Payments', desc: 'An initial payment is made on signing the Commencement of Works agreement. The balance is structured across milestones: 25% at first-floor or roof stage, 30% at first fix, and 20% on completion. You pay as work progresses.' },
               ].map((item, i) => (
                 <div key={i} className="benefit-card">
                   <h3 className="benefit-title">{item.title}</h3>

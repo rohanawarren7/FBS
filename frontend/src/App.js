@@ -20,7 +20,6 @@ import TermsConditions from './components/TermsConditions';
 import ExtensionsPage from './components/pages/ExtensionsPage';
 import LoftConversionsPage from './components/pages/LoftConversionsPage';
 import BathroomRefurbishmentsPage from './components/pages/BathroomRefurbishmentsPage';
-import ExternalWallInsulationPage from './components/pages/ExternalWallInsulationPage';
 import RoofingPage from './components/pages/RoofingPage';
 import MaintenancePage from './components/pages/MaintenancePage';
 import HaveringPage from './components/pages/HaveringPage';
@@ -56,7 +55,7 @@ function App() {
           <Route path="/extensions" element={<ExtensionsPage />} />
           <Route path="/loft-conversions" element={<LoftConversionsPage />} />
           <Route path="/bathroom-refurbishments" element={<BathroomRefurbishmentsPage />} />
-          <Route path="/external-wall-insulation" element={<ExternalWallInsulationPage />} />
+          <Route path="/external-wall-insulation" element={<Navigate to="/" replace />} />
           <Route path="/roofing" element={<RoofingPage />} />
           <Route path="/maintenance" element={<MaintenancePage />} />
           <Route path="/havering" element={<HaveringPage />} />

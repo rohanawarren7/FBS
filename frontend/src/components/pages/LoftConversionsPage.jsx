@@ -84,7 +84,7 @@ const LoftConversionsPage = () => {
                 { title: 'Single Point of Contact', desc: 'One dedicated team member leads every loft conversion. One person responsible from survey to completion — no handoffs, no confusion.' },
                 { title: '12-Month Defect Liability Period', desc: 'If anything goes wrong in the first year—cracking, leaks, poor finishes—we return and fix it at no additional cost.' },
                 { title: 'Fully Insured', desc: 'Public liability and employers\' liability insurance. Insurance certificates provided on request.' },
-                { title: 'Transparent Staged Payments', desc: 'No large upfront deposits. 25% commencement, 25% shell completion, 30% first fix, 20% on completion.' },
+                { title: 'Transparent Staged Payments', desc: 'An initial payment is made on signing the Commencement of Works agreement. The balance is staged: 25% at shell completion, 30% at first fix, 20% on completion.' },
               ].map((item, i) => (
                 <div key={i} className="benefit-card">
                   <h3 className="benefit-title">{item.title}</h3>

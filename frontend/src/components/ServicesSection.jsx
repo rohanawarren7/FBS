@@ -36,12 +36,6 @@ const ServicesSection = () => {
       path: '/bathroom-refurbishments'
     },
     {
-      icon: <Wrench size={40} />,
-      title: 'External Wall Insulation',
-      description: 'EWI for solid-wall properties. ECO4 support available.',
-      path: '/external-wall-insulation'
-    },
-    {
       icon: <Warehouse size={40} />,
       title: 'Roofing',
       description: 'Pitched & flat roofs, repairs, emergency call-out',

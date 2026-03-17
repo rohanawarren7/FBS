@@ -46,10 +46,6 @@ const RomfordPage = () => {
                 <p className="benefit-description">Full bathroom refits, en-suite installations, and wet rooms across Romford. Supply and fit or fit-only service. <Link to="/bathroom-refurbishments">View bathroom services →</Link></p>
               </div>
               <div className="benefit-card">
-                <h3 className="benefit-title"><Link to="/external-wall-insulation" style={{ color: 'inherit' }}>External Wall Insulation Romford</Link></h3>
-                <p className="benefit-description">EWI for Romford's solid-wall pre-war properties. EPS and mineral wool systems. ECO4 eligibility guidance. Silicone and mineral render finishes. <Link to="/external-wall-insulation">View EWI services →</Link></p>
-              </div>
-              <div className="benefit-card">
                 <h3 className="benefit-title"><Link to="/roofing" style={{ color: 'inherit' }}>Roofing Romford</Link></h3>
                 <p className="benefit-description">Full re-roofs, flat roof replacements, and repairs across Romford. EPDM and GRP flat roof systems. Emergency call-out for storm damage. Fascias and guttering. <Link to="/roofing">View roofing services →</Link></p>
               </div>

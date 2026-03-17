@@ -8,7 +8,7 @@ const LandingPage = () => {
     <>
       <Helmet>
         <title>Fallow Building Services | Building Contractor Havering &amp; Essex</title>
-        <meta name="description" content="Building contractor in Havering & Essex. Extensions, loft conversions, renovations, roofing, EWI, property maintenance. CIS-registered. Call 0203 576 5962." />
+        <meta name="description" content="Building contractor in Havering & Essex. Extensions, loft conversions, renovations, roofing, property maintenance. CIS-registered. Call 0203 576 5962." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/" />
       </Helmet>
       <div className="landing-page">
