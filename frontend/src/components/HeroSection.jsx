@@ -54,7 +54,8 @@ const HeroSection = () => {
     window.location.href = '/contact#enquiry-form';
   };
 
-  const headlineWords = "Building excellence across Havering & Essex".split(" ");
+  const h1Text = "Building Contractors in Havering & Essex";
+  const subheadingText = "Building excellence across Havering & Essex";
 
   const menuItems = [
     { name: 'Home', path: '/', icon: Home },
@@ -260,7 +261,7 @@ const HeroSection = () => {
           initial="hidden"
           animate="visible"
         >
-          {headlineWords.map((word, index) => (
+          {h1Text.split(" ").map((word, index) => (
             <motion.span
               key={index}
               className="hero-word"
@@ -270,6 +271,17 @@ const HeroSection = () => {
             </motion.span>
           ))}
         </motion.h1>
+        
+        {/* Subheading */}
+        <motion.p 
+          className="hero-subheading"
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.5 }}
+        >
+          {subheadingText}
+        </motion.p>
         
         {/* Description */}
         <motion.p 

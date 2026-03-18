@@ -8,7 +8,10 @@ import {
   PaintBucket, 
   Warehouse, 
   Key, 
-  ArrowRight
+  ArrowRight,
+  Shield,
+  Award,
+  Clock
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import './ServicesSection.css';
@@ -292,7 +295,7 @@ const ServicesSection = () => {
     <section className="services-section" ref={sectionRef}>
       <div className="services-container">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           className="section-header"
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
@@ -301,8 +304,13 @@ const ServicesSection = () => {
           <span className="section-subtitle">Our Services</span>
           <h2 className="section-title">Expert Building Solutions</h2>
           <p className="section-description">
-            From minor renovations to major construction projects, we deliver exceptional 
-            craftsmanship and attention to detail across Havering and Essex.
+            From minor renovations to major construction projects, we deliver exceptional craftsmanship and attention to detail across Havering and Essex.
+          </p>
+          <p className="section-description" style={{ marginTop: '16px' }}>
+            Every project we take on is personally managed by Rohan, our founder, from the initial site survey and quotation through to Building Control sign-off and final handover. You get a dedicated point of contact throughout — someone who knows your project, not a call centre or rotating account manager. This structure is deliberate. In our experience, most problems on building projects happen when information passes between too many people. We keep the chain short: one dedicated contact, consistent accountability from survey to sign-off.
+          </p>
+          <p className="section-description" style={{ marginTop: '16px' }}>
+            CIS-registered and fully insured, we bring a meticulous approach to every job, with a particular reputation for clear communication, punctuality, and leaving sites clean and tidy. Based in Rainham, we work across Romford, Hornchurch, Upminster, and the wider Havering borough, as well as East London and Essex. The local knowledge we've built in Havering — the housing stock, the planning process, the Building Control teams — translates well wherever we work.
           </p>
         </motion.div>
 
@@ -378,7 +386,56 @@ const ServicesSection = () => {
           </motion.div>
         </div>
 
-        {/* Service Areas */}
+        {/* Trust Block */
+        <motion.div 
+          className="trust-block-section"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="trust-block-grid">
+            <motion.div 
+              className="trust-item"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <div className="trust-icon">
+                <Shield size={32} />
+              </div>
+              <h4 className="trust-title">CIS Registered</h4>
+              <p className="trust-description">Company No. 16532814</p>
+            </motion.div>
+            
+            <motion.div 
+              className="trust-item"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="trust-icon">
+                <Award size={32} />
+              </div>
+              <h4 className="trust-title">Fully Insured</h4>
+              <p className="trust-description">Public liability covered</p>
+            </motion.div>
+            
+            <motion.div 
+              className="trust-item"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <div className="trust-icon">
+                <Clock size={32} />
+              </div>
+              <h4 className="trust-title">Free Site Survey</h4>
+              <p className="trust-description">Within 48 hours</p>
+            </motion.div>
+          </div>
+        </motion.div>
+
+        {/* Service Areas */
         <motion.div 
           className="service-areas-section"
           initial={{ opacity: 0, y: 30 }}
@@ -388,6 +445,9 @@ const ServicesSection = () => {
           <div className="service-areas-header">
             <h3 className="areas-title">Areas We Serve</h3>
             <p className="areas-subtitle">Proudly serving communities across East London and Essex</p>
+            <p className="areas-description">
+              Based in Rainham, we work across the full London Borough of Havering and into East London and Essex. Whether your project is in Romford, Hornchurch, Upminster, or Barking, you get the same dedicated team, the same clear communication, and the same standard of finish.
+            </p>
           </div>
           
           <div className="areas-grid">

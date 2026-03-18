@@ -6,7 +6,7 @@ const Outbuildings = () => {
     // SEO Fields
     title: 'Outbuildings',
     pageTitle: 'Garden Rooms & Outbuildings Havering & Essex | Fallow Building Services',
-    metaDescription: 'Custom garden offices, studios & outbuildings in Havering, Romford & Essex. Home offices, gyms, studios. Free quotes, CIS-registered, fully insured. CIS registered.',
+    metaDescription: 'Custom garden offices, studios & outbuildings in Havering, Romford & Essex. Home offices, gyms, studios. CIS-registered & fully insured. Free quotes available.'
     canonicalUrl: 'https://fallowbuildingservices.co.uk/outbuildings',
     h1: 'Bespoke Garden Rooms & Outbuildings Across Havering & Essex',
     

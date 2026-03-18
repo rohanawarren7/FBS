@@ -6,7 +6,7 @@ const LoftConversions = () => {
     // SEO Fields
     title: 'Loft Conversions',
     pageTitle: 'Loft Conversions Havering & Essex | Fallow Building Services',
-    metaDescription: 'Expert loft conversion services in Havering, Romford & Essex. Dormer, Velux, hip-to-gable & mansard conversions. Transform your attic space. Free quotes available.',
+    metaDescription: 'Loft conversions in Havering, Romford & Essex. Dormer, Velux, hip-to-gable & mansard. Transform your attic. Free quotes. CIS-registered.'
     canonicalUrl: 'https://fallowbuildingservices.co.uk/loft-conversions',
     h1: 'Professional Loft Conversions Across Havering & Essex',
     

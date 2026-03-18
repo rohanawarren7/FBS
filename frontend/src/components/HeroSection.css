@@ -107,6 +107,17 @@
   gap: 0.375em;
 }
 
+.hero-subheading {
+  font-weight: 500;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  text-align: center;
+  max-width: 35rem;
+  text-wrap: balance;
+}
+
 .hero-word {
   display: inline-block;
   will-change: transform, opacity, filter;
