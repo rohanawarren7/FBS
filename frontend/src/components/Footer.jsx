@@ -33,7 +33,7 @@ const Footer = () => {
 
   const trustBadges = [
     { icon: Shield, text: 'CIS Registered' },
-    { icon: Award, text: '5+ Years Experience' },
+    { icon: Award, text: '150+ Projects Delivered' },
     { icon: CheckCircle2, text: 'Fully Insured' },
     { icon: Clock, text: 'Reliable Service' }
   ];
@@ -98,8 +98,8 @@ const Footer = () => {
               </Link>
               
               <p className="footer-tagline">
-                Building excellence across Havering and Essex for over 15 years. 
-                Your trusted partner for construction and property services.
+                Havering's trusted building contractor — delivering quality extensions, loft conversions, and renovations across Essex. 
+                Professionally managed, reliably delivered.
               </p>
 
               {/* Newsletter Signup */}

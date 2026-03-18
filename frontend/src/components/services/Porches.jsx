@@ -6,7 +6,7 @@ const Porches = () => {
     // SEO Fields
     title: 'Porches',
     pageTitle: 'Porch Installation Havering & Essex | Fallow Building Services',
-    metaDescription: 'Professional porch installations in Havering, Romford & Essex. Open, closed, and storm porches built to enhance your home. Free quotes, 15+ years experience.',
+    metaDescription: 'Professional porch installations in Havering, Romford & Essex. Open, closed, and storm porches built to enhance your home. Free quotes, CIS-registered, fully insured.',
     canonicalUrl: 'https://fallowbuildingservices.co.uk/porches',
     h1: 'Expert Porch Installation Across Havering & Essex',
     

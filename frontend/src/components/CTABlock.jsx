@@ -39,7 +39,7 @@ const CTABlock = () => {
   const benefits = [
     { icon: Clock, text: "Free site survey within 48 hours" },
     { icon: Shield, text: "No obligation quotes" },
-    { icon: Award, text: "15+ years of expertise" }
+    { icon: Award, text: "Personally managed projects" }
   ];
 
   return (

@@ -39,7 +39,7 @@ const HeroSection = () => {
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
       
       setCounters({
-        years: Math.round(5 * easeOutQuart),
+        years: 150,
         clients: Math.round(100 * easeOutQuart),
         rating: Math.round(5 * easeOutQuart)
       });
@@ -126,7 +126,7 @@ const HeroSection = () => {
   };
 
   const stats = [
-    { icon: Clock, value: counters.years, suffix: '+', label: 'Years Experience' },
+    { icon: Clock, value: 150, suffix: '+', label: 'Projects Delivered' },
     { icon: Heart, value: counters.clients, suffix: '+', label: 'Happy Clients' },
     { icon: Star, value: counters.rating, suffix: '/5', label: 'Star Rating' }
   ];

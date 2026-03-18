@@ -6,7 +6,7 @@ const Extensions = () => {
     // SEO Fields
     title: 'Home Extensions',
     pageTitle: 'Home Extensions Havering & Essex | Fallow Building Services',
-    metaDescription: 'Expert home extension services in Havering, Romford & Essex. Single & double-storey extensions, rear & side returns. Free quotes, 15+ years experience. CIS registered.',
+    metaDescription: 'Expert home extension services in Havering, Romford & Essex. Single & double-storey extensions, rear & side returns. CIS-registered, fully insured. Free quotes available.'
     canonicalUrl: 'https://fallowbuildingservices.co.uk/extensions',
     h1: 'Expert Home Extensions Across Havering & Essex',
     

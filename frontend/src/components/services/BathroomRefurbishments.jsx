@@ -6,7 +6,7 @@ const BathroomRefurbishments = () => {
     // SEO Fields
     title: 'Bathroom Refurbishments',
     pageTitle: 'Bathroom Refurbishments Havering & Essex | Fallow Building Services',
-    metaDescription: 'Expert bathroom renovation and refurbishment in Havering, Romford & Essex. Modern installations, luxury finishes, full refits. Free quotes, 15+ years experience.',
+    metaDescription: 'Expert bathroom renovation and refurbishment in Havering, Romford & Essex. Modern installations, luxury finishes, full refits. CIS-registered. Free quotes available.',
     canonicalUrl: 'https://fallowbuildingservices.co.uk/bathroom-refurbishments',
     h1: 'Professional Bathroom Refurbishments Across Havering & Essex',
     
