@@ -52,17 +52,17 @@ const Navigation = () => {
   const buildingServices = [
     { name: 'Extensions', path: '/extensions', icon: Building2 },
     { name: 'Loft Conversions', path: '/loft-conversions', icon: Home },
-    { name: 'Home Renovations', path: '/services/home-renovations', icon: Home },
-    { name: 'Kitchen Refurbishments', path: '/services/kitchen-refurbishments', icon: Wrench },
+    { name: 'Home Renovations', path: '/home-renovations', icon: Home },
+    { name: 'Kitchen Refurbishments', path: '/kitchen-refurbishments', icon: Wrench },
     { name: 'Bathroom Refurbishments', path: '/bathroom-refurbishments', icon: Wrench },
     { name: 'Roofing', path: '/roofing', icon: Home },
-    { name: 'Porches', path: '/services/porches', icon: Home },
-    { name: 'Outbuildings', path: '/services/outbuildings', icon: Building2 }
+    { name: 'Porches', path: '/porches', icon: Home },
+    { name: 'Outbuildings', path: '/outbuildings', icon: Building2 }
   ];
 
   const propertyServices = [
     { name: 'Property Maintenance', path: '/maintenance', icon: Wrench },
-    { name: 'Property Management', path: '/services/property-management', icon: Users }
+    { name: 'Property Management', path: '/property-management', icon: Users }
   ];
 
   const navLinks = [

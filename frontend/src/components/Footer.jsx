@@ -41,9 +41,9 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Extensions', path: '/extensions' },
     { name: 'Loft Conversions', path: '/loft-conversions' },
-    { name: 'Kitchen Refurbishments', path: '/services/kitchen-refurbishments' },
+    { name: 'Kitchen Refurbishments', path: '/kitchen-refurbishments' },
     { name: 'Bathroom Refurbishments', path: '/bathroom-refurbishments' },
-    { name: 'Home Renovations', path: '/services/home-renovations' },
+    { name: 'Home Renovations', path: '/home-renovations' },
     { name: 'Property Maintenance', path: '/maintenance' }
   ];
 

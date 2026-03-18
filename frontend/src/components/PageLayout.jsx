@@ -25,7 +25,7 @@ const PageLayout = ({ children, heroTitle, heroSubtitle, heroImage = '/images/he
     { name: 'Home', path: '/', icon: Home },
     { name: 'Extensions', path: '/extensions', icon: Building2 },
     { name: 'Loft Conversions', path: '/loft-conversions', icon: Building2 },
-    { name: 'Kitchens', path: '/services/kitchen-refurbishments', icon: Wrench },
+    { name: 'Kitchens', path: '/kitchen-refurbishments', icon: Wrench },
     { name: 'Bathrooms', path: '/bathroom-refurbishments', icon: Wrench },
     { name: 'About', path: '/about', icon: Users },
     { name: 'Contact', path: '/contact', icon: Mail },

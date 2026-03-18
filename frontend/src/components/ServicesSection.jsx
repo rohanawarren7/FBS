@@ -121,14 +121,14 @@ const ServicesSection = () => {
       icon: Home,
       title: 'Home Renovations',
       description: 'Full refurbishments and property upgrades that transform your living space.',
-      path: '/services/home-renovations',
+      path: '/home-renovations',
       size: 'medium'
     },
     {
       icon: PaintBucket,
       title: 'Kitchen Refurbishments',
       description: 'Modern kitchen installations with premium finishes and expert craftsmanship.',
-      path: '/services/kitchen-refurbishments',
+      path: '/kitchen-refurbishments',
       size: 'medium'
     },
     {
@@ -149,14 +149,14 @@ const ServicesSection = () => {
       icon: Warehouse,
       title: 'Porches',
       description: 'Open, closed & storm porch installations to enhance your entrance.',
-      path: '/services/porches',
+      path: '/porches',
       size: 'small'
     },
     {
       icon: Warehouse,
       title: 'Outbuildings',
       description: 'Custom garden offices, studios & storage solutions built to last.',
-      path: '/services/outbuildings',
+      path: '/outbuildings',
       size: 'small'
     }
   ];
@@ -174,7 +174,7 @@ const ServicesSection = () => {
       icon: Key,
       title: 'Property Management',
       description: 'Full property management for Havering & East London landlords.',
-      path: '/services/property-management',
+      path: '/property-management',
       size: 'medium'
     }
   ];

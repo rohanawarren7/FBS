@@ -46,15 +46,15 @@ function App() {
               <Route path="/services/loft-conversions" element={<Navigate to="/loft-conversions" replace />} />
               <Route path="/services/bathroom-refurbishments" element={<Navigate to="/bathroom-refurbishments" replace />} />
               {/* Existing service pages — still on /services/ prefix */}
-              <Route path="/services/home-renovations" element={<HomeRenovations />} />
+              <Route path="/services/home-renovations" element={<Navigate to="/home-renovations" replace />} />
               <Route path="/home-renovations" element={<HomeRenovations />} />
-              <Route path="/services/porches" element={<Porches />} />
+              <Route path="/services/porches" element={<Navigate to="/porches" replace />} />
               <Route path="/porches" element={<Porches />} />
               <Route path="/services/kitchen-refurbishments" element={<KitchenRefurbishments />} />
               <Route path="/kitchen-refurbishments" element={<KitchenRefurbishments />} />
-              <Route path="/services/outbuildings" element={<Outbuildings />} />
+              <Route path="/services/outbuildings" element={<Navigate to="/outbuildings" replace />} />
               <Route path="/outbuildings" element={<Outbuildings />} />
-              <Route path="/services/property-management" element={<PropertyManagement />} />
+              <Route path="/services/property-management" element={<Navigate to="/property-management" replace />} />
               <Route path="/property-management" element={<PropertyManagement />} />
               <Route path="/services/guaranteed-rent" element={<Navigate to="/maintenance" replace />} />
               <Route path="/guaranteed-rent" element={<Navigate to="/maintenance" replace />} />
