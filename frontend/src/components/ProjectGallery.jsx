@@ -27,7 +27,7 @@ const ProjectGallery = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project Showcase 1',
+      title: 'Rear Single-Storey Extension',
       category: 'extensions',
       location: 'Havering, Essex',
       year: '2024',
@@ -36,7 +36,7 @@ const ProjectGallery = () => {
     },
     {
       id: 2,
-      title: 'Project Showcase 2',
+      title: 'Full Home Renovation',
       category: 'renovations',
       location: 'Romford, Essex',
       year: '2024',
@@ -45,8 +45,8 @@ const ProjectGallery = () => {
     },
     {
       id: 3,
-      title: 'Project Showcase 3',
-      category: 'kitchen',
+      title: 'Dormer Loft Conversion',
+      category: 'loft',
       location: 'Hornchurch, Essex',
       year: '2024',
       image: '/images/projects/project-3.jpg',
@@ -54,8 +54,8 @@ const ProjectGallery = () => {
     },
     {
       id: 4,
-      title: 'Project Showcase 4',
-      category: 'bathroom',
+      title: 'Kitchen Refurbishment',
+      category: 'kitchen',
       location: 'Rainham, Essex',
       year: '2023',
       image: '/images/projects/project-4.jpg',
@@ -63,7 +63,7 @@ const ProjectGallery = () => {
     },
     {
       id: 5,
-      title: 'Project Showcase 5',
+      title: 'Bathroom Refurbishment',
       category: 'extensions',
       location: 'Upminster, Essex',
       year: '2023',
@@ -72,7 +72,7 @@ const ProjectGallery = () => {
     },
     {
       id: 6,
-      title: 'Project Showcase 6',
+      title: 'Flat Roof Replacement',
       category: 'loft',
       location: 'Havering, Essex',
       year: '2024',
@@ -81,7 +81,7 @@ const ProjectGallery = () => {
     },
     {
       id: 7,
-      title: 'Project Showcase 7',
+      title: 'Double-Storey Side Extension',
       category: 'renovations',
       location: 'Romford, Essex',
       year: '2023',
@@ -90,8 +90,8 @@ const ProjectGallery = () => {
     },
     {
       id: 8,
-      title: 'Project Showcase 8',
-      category: 'kitchen',
+      title: 'Velux Loft Conversion',
+      category: 'loft',
       location: 'Hornchurch, Essex',
       year: '2024',
       image: '/images/projects/project-8.jpg',
