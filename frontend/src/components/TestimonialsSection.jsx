@@ -74,15 +74,25 @@ const TestimonialsSection = () => {
               ))}
             </div>
           </div>
-          <p className="rating-text">Perfect rating from 50+ reviews</p>
-          <a 
-            href="https://www.bark.com/en/gb/company/fallow-building-services/Gw6Nv/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="rating-link"
-          >
-            View all reviews on Bark
-          </a>
+          <p className="rating-text">5.0 ★★★★★ on Google · 50+ reviews on Bark</p>
+          <div className="rating-links">
+            <a 
+              href="https://g.page/r/CbrPxLbz5OBpEBM/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="rating-link google-reviews"
+            >
+              View Google Reviews
+            </a>
+            <a 
+              href="https://www.bark.com/en/gb/company/fallow-building-services/Gw6Nv/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="rating-link bark-reviews"
+            >
+              View Bark Reviews
+            </a>
+          </div>
         </motion.div>
 
         {/* Testimonials Grid */}
