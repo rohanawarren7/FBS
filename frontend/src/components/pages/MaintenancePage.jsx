@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Phone, MessageCircle, FileText } from 'lucide-react';
 import PageLayout from '../PageLayout';
 import '../ServicePage.css';

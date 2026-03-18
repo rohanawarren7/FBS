@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import PageLayout from '../PageLayout';
+import FAQComponent from '../FAQComponent';
 import CTABlock from '../CTABlock';
 import '../ServicePage.css';
 
@@ -44,20 +46,17 @@ const RoofingPage = () => {
               ))}
             </div>
 
-            <h2 className="section-title" style={{ marginTop: '40px' }}>Frequently Asked Questions</h2>
-            {[
-              { q: 'How quickly can you attend for emergency roof repairs?', a: 'For clients in our core Havering service area (Romford, Hornchurch, Rainham, Upminster), we aim to attend emergency call-outs the same day or next working day depending on availability and weather conditions.' },
-              { q: 'How long does a full roof replacement take?', a: 'A typical three-bedroom semi-detached house re-roof takes 5–7 working days from strip-off to completion, weather permitting. Flat roof replacements on single-storey extensions take 2–3 days.' },
-              { q: 'Do you handle insurance claims for storm or fire damage?', a: 'Yes. We provide detailed written reports, photographs, and quotes in the format required by insurance companies. We can liaise directly with loss adjusters and insurers if you authorise us to do so.' },
-              { q: 'How do I know if my roof needs replacing or just repairing?', a: 'We inspect the roof and assess the overall condition of tiles or slates, the felt underlay, battens, and any flashings. If fewer than 20–25% of tiles are damaged and the structure is sound, repair is usually the right call. If the felt is perished, battens are rotten, or widespread tile degradation is present, full replacement is more cost-effective over a 5–10 year horizon. We give you an honest assessment—we don\'t recommend replacement where repair is sufficient.' },
-              { q: 'What type of roof tiles are used on 1930s houses in Havering?', a: 'Most 1930s semi-detached properties across Romford, Hornchurch, and Havering originally used interlocking concrete or clay plain tiles. For full re-roofs, we typically recommend modern concrete interlocking tiles which are widely available, long-lasting, and compatible with the roof pitch of inter-war housing. We source matching tiles where only partial repairs or replacement are required.' },
-              { q: 'Will you need scaffolding for roofing work?', a: 'Yes, for most pitched roof work. Any work on a roof slope requires scaffolding for safe access and compliance with working at height regulations. Scaffolding is included in our quote for re-roofing and major repair work. For minor repairs such as a single ridge tile or small section of slipped slates, we assess on a job-by-job basis whether a tower or fixed scaffold is required.' },
-            ].map((faq, i) => (
-              <div key={i} style={{ marginBottom: '24px', borderLeft: '4px solid #c9a84c', paddingLeft: '20px' }}>
-                <h3 style={{ fontWeight: '700', marginBottom: '8px' }}>{faq.q}</h3>
-                <p>{faq.a}</p>
-              </div>
-            ))}
+            <FAQComponent 
+              title="Frequently Asked Questions"
+              faqs={[
+                { question: 'How quickly can you attend for emergency roof repairs?', answer: 'For clients in our core Havering service area (Romford, Hornchurch, Rainham, Upminster), we aim to attend emergency call-outs the same day or next working day depending on availability and weather conditions.' },
+                { question: 'How long does a full roof replacement take?', answer: 'A typical three-bedroom semi-detached house re-roof takes 5–7 working days from strip-off to completion, weather permitting. Flat roof replacements on single-storey extensions take 2–3 days.' },
+                { question: 'Do you handle insurance claims for storm or fire damage?', answer: 'Yes. We provide detailed written reports, photographs, and quotes in the format required by insurance companies. We can liaise directly with loss adjusters and insurers if you authorise us to do so.' },
+                { question: 'How do I know if my roof needs replacing or just repairing?', answer: 'We inspect the roof and assess the overall condition of tiles or slates, the felt underlay, battens, and any flashings. If fewer than 20–25% of tiles are damaged and the structure is sound, repair is usually the right call. If the felt is perished, battens are rotten, or widespread tile degradation is present, full replacement is more cost-effective over a 5–10 year horizon. We give you an honest assessment—we don\'t recommend replacement where repair is sufficient.' },
+                { question: 'What type of roof tiles are used on 1930s houses in Havering?', answer: 'Most 1930s semi-detached properties across Romford, Hornchurch, and Havering originally used interlocking concrete or clay plain tiles. For full re-roofs, we typically recommend modern concrete interlocking tiles which are widely available, long-lasting, and compatible with the roof pitch of inter-war housing. We source matching tiles where only partial repairs or replacement are required.' },
+                { question: 'Will you need scaffolding for roofing work?', answer: 'Yes, for most pitched roof work. Any work on a roof slope requires scaffolding for safe access and compliance with working at height regulations. Scaffolding is included in our quote for re-roofing and major repair work. For minor repairs such as a single ridge tile or small section of slipped slates, we assess on a job-by-job basis whether a tower or fixed scaffold is required.' },
+              ]}
+            />
 
             <h2 className="section-title" style={{ marginTop: '40px' }}>Areas We Cover</h2>
             <div className="areas-list" style={{ marginTop: '12px' }}>
