@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import LandingPage from './components/LandingPage';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 // Legacy service pages (still served at /services/ prefix and clean URLs)
 import HomeRenovations from './components/services/HomeRenovations';
@@ -75,6 +76,7 @@ function App() {
               <Route path="/portfolio/*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
+          <WhatsAppButton />
           <Footer />
         </BrowserRouter>
       </div>
