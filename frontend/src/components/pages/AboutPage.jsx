@@ -15,6 +15,20 @@ const AboutPage = () => {
         <title>About Fallow Building Services | Essex Building Contractor</title>
         <meta name="description" content="CIS-registered building contractor based in Rainham, Essex. Extensions, loft conversions, renovations. 12-month defect liability. Call 0203 576 5962." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/about" />
+n        <meta property="og:title" content="About Fallow Building Services | Essex Building Contractor" />
+        <meta property="og:description" content="CIS-registered building contractor based in Rainham, Essex. Extensions, loft conversions, renovations." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fallowbuildingservices.co.uk/about" />
+        <meta property="og:image" content="https://fallowbuildingservices.co.uk/images/og/og-default.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="About Fallow Building Services | Essex Building Contractor" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:site_name" content="Fallow Building Services" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Fallow Building Services | Essex Building Contractor" />
+        <meta name="twitter:description" content="CIS-registered building contractor based in Rainham, Essex. Extensions, loft conversions, renovations." />
+        <meta name="twitter:image" content="https://fallowbuildingservices.co.uk/images/og/og-default.jpg" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"Organisation","name":"Fallow Building Services","legalName":"Fallow Business Group Ltd","url":"https://fallowbuildingservices.co.uk","logo":"https://fallowbuildingservices.co.uk/images/logo-large.png","contactPoint":{"@type":"ContactPoint","telephone":"02035765962","contactType":"customer service","areaServed":"GB","availableLanguage":"English"},"address":{"@type":"PostalAddress","streetAddress":"6 Sunningdale Road","addressLocality":"Rainham","addressRegion":"Essex","postalCode":"RM13 7BD","addressCountry":"GB"},"identifier":{"@type":"PropertyValue","name":"Companies House","value":"16532814"}}`}</script>
       </Helmet>
 

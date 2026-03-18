@@ -5,6 +5,8 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import LandingPage from './components/LandingPage';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import BlogPage from './components/pages/BlogPage';
+import DesktopNav from './components/DesktopNav';
 
 // Legacy service pages (still served at /services/ prefix and clean URLs)
 import HomeRenovations from './components/services/HomeRenovations';
@@ -33,6 +35,7 @@ function App() {
     <ThemeProvider>
       <div className="App">
         <BrowserRouter>
+          <DesktopNav />
           {/* Accessibility: Skip to main content link */}
           <a href="#main-content" className="skip-link">
             Skip to main content
@@ -69,6 +72,7 @@ function App() {
               <Route path="/romford" element={<RomfordPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/blog" element={<BlogPage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-conditions" element={<TermsConditions />} />
               {/* Redirect broken /portfolio/ URLs that were previously indexed */}

@@ -18,6 +18,20 @@ const BathroomRefurbishmentsPage = () => {
         <title>Bathroom Renovation Havering | Bathroom Refurbishment Essex</title>
         <meta name="description" content="Complete bathroom renovations in Havering & Essex. Full refits, en-suites, wet rooms. Supply & fit or fit-only. Call 0203 576 5962 for free quote." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/bathroom-refurbishments" />
+n        <meta property="og:title" content="Bathroom Renovation Havering | Bathroom Refurbishment Essex" />
+        <meta property="og:description" content="Complete bathroom renovations in Havering & Essex. Full refits, en-suites, wet rooms." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fallowbuildingservices.co.uk/bathroom-refurbishments" />
+        <meta property="og:image" content="https://fallowbuildingservices.co.uk/images/og/og-default.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Bathroom Renovation Havering | Bathroom Refurbishment Essex" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:site_name" content="Fallow Building Services" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bathroom Renovation Havering | Bathroom Refurbishment Essex" />
+        <meta name="twitter:description" content="Complete bathroom renovations in Havering & Essex. Full refits, en-suites, wet rooms." />
+        <meta name="twitter:image" content="https://fallowbuildingservices.co.uk/images/og/og-default.jpg" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 

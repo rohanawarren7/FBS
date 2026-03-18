@@ -13,6 +13,20 @@ const ContactPage = () => {
         <title>Contact Fallow Building Services | Free Site Survey</title>
         <meta name="description" content="Contact Fallow Building Services for a free site survey. Call 0203 576 5962, WhatsApp, or use our enquiry form. Rainham-based, serving Havering & Essex." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/contact" />
+n        <meta property="og:title" content="Contact Fallow Building Services | Free Site Survey" />
+        <meta property="og:description" content="Contact Fallow Building Services for a free site survey. Call 0203 576 5962, WhatsApp, or use our enquiry form." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fallowbuildingservices.co.uk/contact" />
+        <meta property="og:image" content="https://fallowbuildingservices.co.uk/images/og/og-default.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Contact Fallow Building Services | Free Site Survey" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:site_name" content="Fallow Building Services" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Fallow Building Services | Free Site Survey" />
+        <meta name="twitter:description" content="Contact Fallow Building Services for a free site survey. Call 0203 576 5962, WhatsApp, or use our enquiry form." />
+        <meta name="twitter:image" content="https://fallowbuildingservices.co.uk/images/og/og-default.jpg" />
         <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"LocalBusiness","name":"Fallow Building Services","telephone":"02035765962","email":"info@fallowbuildingservices.co.uk","url":"https://fallowbuildingservices.co.uk/contact","address":{"@type":"PostalAddress","streetAddress":"6 Sunningdale Road","addressLocality":"Rainham","addressRegion":"Essex","postalCode":"RM13 7BD","addressCountry":"GB"},"openingHours":"Mo-Fr 08:00-18:00","contactPoint":[{"@type":"ContactPoint","telephone":"02035765962","contactType":"sales","contactOption":"TollFree"},{"@type":"ContactPoint","telephone":"+447459627464","contactType":"customer service","contactOption":"HearingImpairedSupported"}]}`}</script>
       </Helmet>
 

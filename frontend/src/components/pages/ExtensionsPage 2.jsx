@@ -18,6 +18,20 @@ const ExtensionsPage = () => {
         <title>Home Extensions Havering | House Extensions Romford, Essex</title>
         <meta name="description" content="Quality home extensions across Havering. Single & double-storey, side returns, wraparounds. CIS-registered, fully insured. Call 0203 576 5962 for free survey." />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/extensions" />
+n        <meta property="og:title" content="Home Extensions Havering | House Extensions Romford, Essex" />
+        <meta property="og:description" content="Quality home extensions across Havering. Single & double-storey extensions. CIS-registered, fully insured." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fallowbuildingservices.co.uk/extensions" />
+        <meta property="og:image" content="https://fallowbuildingservices.co.uk/images/og/og-default.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Home Extensions Havering | House Extensions Romford, Essex" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:site_name" content="Fallow Building Services" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Home Extensions Havering | House Extensions Romford, Essex" />
+        <meta name="twitter:description" content="Quality home extensions across Havering. Single & double-storey extensions. CIS-registered, fully insured." />
+        <meta name="twitter:image" content="https://fallowbuildingservices.co.uk/images/og/og-default.jpg" />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
