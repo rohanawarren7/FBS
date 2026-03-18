@@ -19,6 +19,7 @@ const LandingPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://fallowbuildingservices.co.uk/" />
         <link rel="canonical" href="https://fallowbuildingservices.co.uk/" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       </Helmet>
       
       <motion.div 

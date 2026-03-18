@@ -272,6 +272,10 @@ const Footer = () => {
               <Link to="/terms-conditions" className="legal-link">
                 Terms & Conditions
               </Link>
+              <span className="legal-divider">|</span>
+              <a href="/sitemap.xml" className="legal-link">
+                Sitemap
+              </a>
             </div>
           </div>
           

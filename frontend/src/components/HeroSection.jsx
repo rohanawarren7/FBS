@@ -224,6 +224,10 @@ const HeroSection = () => {
           src="/images/hero-construction.jpg"
           alt="Building contractor working in Havering, Essex"
           className="hero-image"
+          loading="eager"
+          fetchpriority="high"
+          width="1920"
+          height="1080"
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}

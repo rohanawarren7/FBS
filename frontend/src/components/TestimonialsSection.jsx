@@ -74,7 +74,7 @@ const TestimonialsSection = () => {
               ))}
             </div>
           </div>
-          <p className="rating-text">5.0 ★★★★★ on Google · 50+ reviews on Bark</p>
+          <p className="rating-text">5.0 ★★★★★ on Google · 20+ reviews on Bark</p>
           <div className="rating-links">
             <a 
               href="https://g.page/r/CbrPxLbz5OBpEBM/" 
